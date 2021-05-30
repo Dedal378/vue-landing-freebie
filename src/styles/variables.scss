@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+//<editor-fold desc="Mixins">
+@mixin roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+@mixin quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+@mixin opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin list-null {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+//</editor-fold>
+
+
+//<editor-fold desc="Variables">
+$base: 4px;
+
+$fw-light: 100;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+$fs-sm: 12px;
+$fs-md: 15px;
+$fs-lg: 18px;
+$fs-xl: 48px;
+
+$padding-vertical-xs: $base * 5;
+$padding-vertical-sm: $base * 15;
+$padding-vertical: $base * 30;
+
+$color-primary: #697ca6;
+$color-secondary: #6188ff;
+$color-third: #adb3cb;
+$color-divider: #d8e3fe;
+
+$transition: .2s;
+
+//</editor-fold>
