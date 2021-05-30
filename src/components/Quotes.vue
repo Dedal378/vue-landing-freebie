@@ -80,7 +80,7 @@ export default {
       padding: $base*10 $base*17 $base*15;
       border: 1px solid #d8e3fe;
       background-color: #fff;
-      box-shadow: 0px 5px 50px #f3f5fa;
+      box-shadow: 0 $base+1 $base*13 #f3f5fa;
 
       &-text {
         color: #676f95;

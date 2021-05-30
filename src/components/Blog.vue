@@ -72,7 +72,7 @@ export default {
   margin-bottom: $base * 25;
   border: 1px solid #d8e3fe;
   background-color: #fff;
-  box-shadow: 0 15px 50px #eff4ff;
+  box-shadow: 0 $base*3 $base*13 #eff4ff;
 
   &__item {
     display: flex;
@@ -86,16 +86,16 @@ export default {
 
     &-gallery {
       display: grid;
-      grid-template-rows: repeat(2, 120px);
-      grid-template-columns: repeat(3, 120px);
-      grid-gap: 12px;
+      grid-template-rows: repeat(2, $base*30);
+      grid-template-columns: repeat(3, $base*30);
+      grid-gap: $base*4;
 
       .image-link {
         position: relative;
         display: block;
-        border-radius: 5px;
+        border-radius: $base + 1;
         overflow: hidden;
-        box-shadow: 0px 15px 100px #e5ebf8;
+        box-shadow: 0px $base*4 $base*25 #e5ebf8;
 
         .lens {
           position: absolute;

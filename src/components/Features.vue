@@ -110,8 +110,8 @@ export default {
       position: absolute;
       content: '';
       height: 1px;
-      width: 28px;
-      top: 130px;
+      width: $base * 7;
+      top: $base * 32;
       right: 120%;
       background-color: #dae4fe;
     }
