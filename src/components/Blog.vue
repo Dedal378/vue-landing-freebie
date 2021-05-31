@@ -28,7 +28,7 @@
               <div class="text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...</div>
 
               <div class="btn-group">
-                <a href="#" class="btn btn--secondary">Read now</a>
+                <a href="#" class="btn btn--primary">Read now</a>
                 <a href="#" class="btn btn--transparent">Add to your bookmarks</a>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default {
 
 <style scoped lang="scss">
 .section-blog {
-  background-color: #f5f8ff;
+  background-color: $color-primary-50;
 
   h4 {
     margin-bottom: $base * 23;
@@ -70,9 +70,9 @@ export default {
 .slider-blog {
   @include list-null();
   margin-bottom: $base * 25;
-  border: 1px solid #d8e3fe;
-  background-color: #fff;
-  box-shadow: 0 $base*3 $base*13 #eff4ff;
+  border: 1px solid $color-primary-50;
+  background-color: $color-white;
+  box-shadow: 0 $base*3 $base*13 $color-primary-50;
 
   &__item {
     display: flex;
@@ -95,7 +95,7 @@ export default {
         display: block;
         border-radius: $base + 1;
         overflow: hidden;
-        box-shadow: 0px $base*4 $base*25 #e5ebf8;
+        box-shadow: 0px $base*4 $base*25 $color-primary-50;
 
         .lens {
           position: absolute;
@@ -138,7 +138,7 @@ export default {
           grid-column: 1 / 3;
 
           &::before {
-            background: linear-gradient(200deg, transparent, #ffc735);
+            background: linear-gradient(200deg, transparent, $color-warning-500);
           }
         }
 
@@ -147,7 +147,7 @@ export default {
           grid-column: 3 / 4;
 
           &::before {
-            background: linear-gradient(230deg, transparent, #ff3535);
+            background: linear-gradient(230deg, transparent, $color-danger-500);
           }
         }
 
@@ -156,7 +156,7 @@ export default {
           grid-column: 3 / 4;
 
           &::before {
-            background: linear-gradient(200deg, transparent, #35aaff);
+            background: linear-gradient(200deg, transparent, $color-cyan-500);
           }
         }
       }
@@ -165,14 +165,11 @@ export default {
     &-content {
 
       .btn-group {
-        .btn--secondary {
+        .btn--primary {
           margin-right: $base * 6;
-          color: #3a79ff;
-          background-color: #d2e1ff;
         }
 
         .btn--transparent {
-          color: #a6b6da;
           font-weight: $fw-bold;
           border-color: transparent;
         }
@@ -184,7 +181,7 @@ export default {
 
       .text {
         @include roboto;
-        color: #8d96bd;
+        color: $color-primary-500;
         font-size: 14px;
         margin-bottom: $base * 8;
         line-height: 1.9;

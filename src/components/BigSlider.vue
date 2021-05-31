@@ -40,7 +40,7 @@ export default {
 <style scoped lang="scss">
 .section-slider-big {
   position: relative;
-  background-color: #f4f7ff;
+  background-color: $color-primary-50;
 
   &__icon-stats {
     position: absolute;
@@ -94,8 +94,8 @@ export default {
   width: $base * 13;
   height: $base * 13;
   border-radius: 100%;
-  background-color: #fff;
-  box-shadow: 0 $base*2 $base*12 rgba(#c9d1e7, .6);
+  background-color: $color-white;
+  box-shadow: 0 $base*2 $base*12 rgba($color-primary-300, .6);
 
 /*  &::before {
     content: '';

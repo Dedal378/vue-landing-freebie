@@ -80,14 +80,14 @@ export default {
       margin: 0 $base*4;
       font-size: $fs-sm;
       font-weight: $fw-medium;
-      color: $color-third;
+      color: $color-primary-300;
 
       &::before, &::after {
         content: '';
         display: block;
         width: $base * 4;
         height: 1px;
-        background-color: #dae4fe;
+        background-color: $color-primary-100;
       }
 
       &::before { margin-right: $base * 4; }
@@ -113,7 +113,7 @@ export default {
       width: $base * 7;
       top: $base * 32;
       right: 120%;
-      background-color: #dae4fe;
+      background-color: $color-primary-100;
     }
 
     &-icon {
@@ -125,13 +125,13 @@ export default {
       margin: 0 auto;
       margin-bottom: $base * 8;
       border-radius: 100%;
-      background-color: #f1f5ff;
+      background-color: $color-primary-50;
     }
 
     &-title {
       @include opensans;
       font-weight: $fw-bold;
-      color: #4074f8;
+      color: $color-secondary-800;
       margin-bottom: $base * 6;
 
     }
@@ -140,7 +140,7 @@ export default {
       @include opensans;
       font-size: $fs-sm;
       font-weight: $fw-medium;
-      color: $color-third;
+      color: $color-primary-300;
       line-height: 2;
     }
   }

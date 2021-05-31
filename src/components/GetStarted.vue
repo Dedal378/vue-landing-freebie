@@ -25,7 +25,7 @@ export default {
 <style scoped lang="scss">
 .section-get-started {
   position: relative;
-  color: #ffffff;
+  color: $color-white;
   text-align: center;
   background: linear-gradient(#6888ff, #5e80ff);
 
@@ -46,7 +46,7 @@ export default {
   }
 
   h2, h5 {
-    color: #ffffff;
+    color: $color-white;
   }
 
   h2 {

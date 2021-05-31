@@ -26,7 +26,7 @@ export default {
 .section-stats {
   @include quicksand;
   display: flex;
-  background-color: #e9efff;
+  background-color: $color-secondary-60;
 
   &__left, &__right {
     display: flex;
@@ -38,19 +38,19 @@ export default {
   &__left {
     align-items: flex-end;
     text-align: right;
-    color: #ffffff;
-    background-color: #6888ff;
+    color: $color-white;
+    background-color: $color-secondary-300;
 
     h2 {
-      color: #ffffff;
+      color: $color-white;
     }
   }
 
   &__right {
-    color: #5e80ff;
+    color: $color-secondary-300;
 
     h2 {
-      color: #5e80ff;
+      color: $color-secondary-300;
     }
   }
 

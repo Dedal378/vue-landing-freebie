@@ -32,7 +32,7 @@ export default {
 <style scoped lang="scss">
 .section-plan {
   position: relative;
-  background-color: #f5f8ff;
+  background-color: $color-primary-50;
   overflow: hidden;
 
   .section-inner {

@@ -3,7 +3,7 @@
 //<editor-fold desc="Common">
 body {
   @include roboto;
-  color: #8d96bd;
+  color: $color-primary-500;
 }
 
 a {
@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
   @include quicksand;
   margin: 0;
   padding: 0;
-  color: #3d4f9f;
+  color: $color-secondary-900;
   font-weight: $fw-regular;
 }
 
@@ -56,12 +56,12 @@ h5 {
     width: $base * 2;
     height: $base * 2;
     border-radius: 100%;
-    background-color: #d1d6e3;
+    background-color: $color-primary-200;
     cursor: pointer;
     transition: $transition;
 
     &--active {
-      background-color: #5283ff;
+      background-color: $color-secondary-600;
     }
 
     & + & {
@@ -84,12 +84,12 @@ h5 {
 .input {
   @include quicksand();
   padding: $base*3 $base*4;
-  color: #7a85ad;
+  color: $color-primary-700;
   font-size: $fs-sm;
   font-weight: $fw-bold;
   border: 1px solid transparent;
   border-radius: $base/2;
-  background: #efeff7;
+  background: $color-primary-100;
 
   &--size-lg {
     padding: $base*5 $base*15 $base*5 $base*6;
@@ -119,66 +119,66 @@ h5 {
   }
 
   &--primary {
-    color: #3a79ff;
-    background-color: #d2e1ff;
+    color: $color-secondary-700;
+    background-color: $color-secondary-60;
 
     &:hover {
-      background-color: darken(#d2e1ff, 5%);
+      background-color: darken($color-secondary-60, 5%);
     }
   }
 
   &--secondary {
-    color: #fff;
-    background-color: #4c85ff;
+    color: $color-white;
+    background-color: $color-secondary-500;
 
     &:hover {
-      background-color: darken(#4c85ff, 5%);
+      background-color: darken($color-secondary-500, 5%);
     }
 
     &-inverted {
-      color: #565f82;
-      background-color: #fff;
+      color: $color-primary-900;
+      background-color: $color-white;
 
       &:hover {
-        background-color: darken(#ffffff, 9%);
+        background-color: darken($color-white, 9%);
       }
     }
   }
 
   &--grayscale {
-    color: #7382a3;
-    background-color: #e8ecf4;
+    color: $color-primary-600;
+    background-color: $color-primary-50;
 
     &:hover {
-      background-color: darken(#e8ecf4, 5%);
+      background-color: darken($color-primary-50, 5%);
     }
   }
 
   &--danger {
-    color: #d43f3f;
-    background-color: #ffd7d7;
+    color: $color-danger-600;
+    background-color: $color-danger-50;
 
     &:hover {
-      background-color: darken(#ffd7d7, 5%);
+      background-color: darken($color-danger-50, 5%);
     }
   }
 
   &--transparent {
-    color: #adb4d2;
-    border: 1px solid #d1d1e4;
+    color: $color-primary-300;
+    border: 1px solid $color-primary-100;
 
     &:hover {
-      color: darken(#adb4d2, 10%);
-      border: 1px solid darken(#d1d1e4, 10%);
+      color: darken($color-primary-300, 10%);
+      border: 1px solid darken($color-primary-100, 10%);
     }
 
     &-inverted {
-      color: #c7d3ff;
-      border: 1px solid #a0b4ff;
+      color: $color-primary-100;
+      border: 1px solid $color-secondary-100;
 
       &:hover {
-        color: lighten(#c7d3ff, 9%);
-        border: 1px solid lighten(#a0b4ff, 10%);
+        color: lighten($color-primary-100, 9%);
+        border: 1px solid lighten($color-secondary-100, 10%);
       }
     }
   }
@@ -215,7 +215,7 @@ h5 {
   width: $base * 6;
   height: $base * 6;
   border-radius: 100%;
-  background-color: #5e81fe;
+  background-color: $color-secondary-400;
 }
 
 .nav-wrapper {
@@ -230,17 +230,17 @@ h5 {
     &-link {
       @include quicksand;
       font-size: $fs-sm;
-      color: $color-primary;
+      color: $color-primary-700;
       font-weight: $fw-medium;
       transition: $transition;
 
       &:hover {
-        color: $color-secondary;
+        color: $color-secondary-200;
       }
 
       &--active {
         font-weight: $fw-bold;
-        color: $color-secondary;
+        color: $color-secondary-200;
       }
     }
   }
@@ -263,13 +263,13 @@ h5 {
 
     &-link {
       path {
-        fill: $color-primary;
+        fill: $color-primary-700;
         transition: $transition;
       }
 
       &:hover {
         path {
-          fill: $color-secondary;
+          fill: $color-secondary-200;
         }
       }
     }

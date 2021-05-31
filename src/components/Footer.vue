@@ -93,6 +93,6 @@ export default {
   font-weight: $fw-medium;
   margin-top: $base * 7;
   margin-left: $base * 24;
-  color: #aeb8d0;
+  color: $color-primary-200;
 }
 </style>

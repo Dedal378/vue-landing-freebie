@@ -134,7 +134,7 @@ export default {
 
   &__item {
     $parent: &;
-    border-bottom: 1px solid #d8e3fe;
+    border-bottom: 1px solid $color-primary-50;
 
     &-trigger {
       display: flex;
@@ -146,7 +146,7 @@ export default {
         transform: rotate(180deg);
 
         .arrow {
-          stroke: #8e96b7;
+          stroke: $color-primary-400;
         }
       }
 
@@ -159,11 +159,11 @@ export default {
 
     &--active {
       .arrow {
-        stroke: #495274;
+        stroke: $color-primary-900;
       }
 
       #{$parent}-trigger {
-        color: #495274;
+        color: $color-primary-900;
 
         &-text {
           font-weight: $fw-bold;
