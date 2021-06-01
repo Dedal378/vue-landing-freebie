@@ -1,8 +1,11 @@
 <template>
-  <section class="section-outer section-header">
+  <header class="section-outer section-header">
     <div class="section-inner section-inner--wide">
       <div class="main-navigation">
-        <a class="logo" href="#"></a>
+        <h1 class="logo">
+          <a class="logo__link" href="#"></a>
+        </h1>
+
         <div class="nav">
           <ul class="nav-wrapper">
             <li class="nav-wrapper__item">
@@ -22,6 +25,7 @@
             </li>
           </ul>
         </div>
+
         <div class="socials">
           <ul class="socials-wrapper">
             <li class="socials-wrapper__item">
@@ -31,6 +35,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="socials-wrapper__item">
               <a class="socials-wrapper__item-link" href="#">
                 <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,6 +47,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="socials-wrapper__item">
               <a class="socials-wrapper__item-link" href="#">
                 <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,6 +57,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="socials-wrapper__item">
               <a class="socials-wrapper__item-link" href="#">
                 <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,12 +69,13 @@
             </li>
           </ul>
         </div>
+
         <div class="btn-wrapper">
           <a href="#" class="btn btn--primary">Get started</a>
         </div>
       </div>
     </div>
-  </section>
+  </header>
 </template>
 
 <script>

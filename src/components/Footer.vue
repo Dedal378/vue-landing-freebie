@@ -1,8 +1,12 @@
 <template>
-  <section class="section-outer section-footer">
+  <footer class="section-outer section-footer">
     <div class="section-inner section-inner--wide">
+
       <div class="main-navigation">
-        <a class="logo" href="#"></a>
+        <div class="logo">
+          <a class="logo__link" href="#"></a>
+        </div>
+
         <div class="nav">
           <ul class="nav-wrapper">
             <li class="nav-wrapper__item">
@@ -22,6 +26,7 @@
             </li>
           </ul>
         </div>
+
         <div class="socials">
           <ul class="socials-wrapper">
             <li class="socials-wrapper__item">
@@ -35,8 +40,8 @@
               <a class="socials-wrapper__item-link" href="#">
                 <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g id="Telegram_logo">
-                    <path id="Vector" d="M5.81972 12.0232C5.38191 12.0232 5.4563 11.8651 5.3053 11.4664L4.01782 7.41344L13.9283 1.78983" fill="#9399AB"/>
-                    <path id="Vector_2" d="M5.81982 12.0232C6.15768 12.0232 6.30696 11.8754 6.49554 11.7L8.29744 10.0241L6.04979 8.72772" fill="#70788E"/>
+                    <path id="Vector" d="M5.81972 12.0232C5.38191 12.0232 5.4563 11.8651 5.3053 11.4664L4.01782 7.41344L13.9283 1.78983" fill="#9399AB" />
+                    <path id="Vector_2" d="M5.81982 12.0232C6.15768 12.0232 6.30696 11.8754 6.49554 11.7L8.29744 10.0241L6.04979 8.72772" fill="#70788E" />
                     <path id="Vector_3" d="M6.04945 8.72806L11.4957 12.5768C12.1172 12.9048 12.5657 12.735 12.7205 12.0249L14.9374 2.03246C15.1644 1.16206 14.5906 0.76729 13.996 1.02547L0.978404 5.82666C0.0898302 6.16756 0.0950105 6.64173 0.816436 6.85301L4.15705 7.85032L11.8909 3.18335C12.256 2.97158 12.5911 3.08543 12.3161 3.31891" />
                   </g>
                 </svg>
@@ -62,13 +67,15 @@
             </li>
           </ul>
         </div>
+
         <div class="btn-wrapper">
           <a href="#" class="btn btn--primary">Get started</a>
         </div>
       </div>
+
       <div class="copyright">Copyright © 2018 by Random site</div>
     </div>
-  </section>
+  </footer>
 </template>
 
 <script>

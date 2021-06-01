@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Header />
-    <BigSlider />
-    <Customers />
-    <PlanAndManage />
-    <Features />
-    <Stats />
-    <Blog />
-    <Quotes />
-    <Faq />
-    <GetStarted />
-    <Newsletter />
+    <main>
+      <BigSlider />
+      <Customers />
+      <PlanAndManage />
+      <Features />
+      <Stats />
+      <Blog />
+      <Quotes />
+      <Faq />
+      <GetStarted />
+      <Newsletter />
+    </main>
+
     <Footer />
   </div>
 </template>
