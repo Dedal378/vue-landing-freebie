@@ -113,10 +113,8 @@ export default {
           transition: $transition;
         }
 
-        &:hover {
-          &::after {
+        &:hover::after {
             opacity: 1;
-          }
         }
 
         img {
