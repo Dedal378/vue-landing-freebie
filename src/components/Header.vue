@@ -3,7 +3,9 @@
     <div class="section-inner section-inner--wide">
       <div class="main-navigation">
         <h1 class="logo">
-          <a class="logo__link" href="#" aria-label="Logo in header"></a>
+          <a class="logo__link" href="#" aria-label="Logo in header">
+            <span class="visually-hidden">Logo Header</span>
+          </a>
         </h1>
 
         <div class="nav">

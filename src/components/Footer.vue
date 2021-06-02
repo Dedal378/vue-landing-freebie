@@ -4,7 +4,9 @@
 
       <div class="main-navigation">
         <div class="logo">
-          <a class="logo__link" href="#" aria-label="Logo in footer"></a>
+          <a class="logo__link" href="#" aria-label="Logo in footer">
+            <span class="visually-hidden">Logo Footer</span>
+          </a>
         </div>
 
         <div class="nav">
