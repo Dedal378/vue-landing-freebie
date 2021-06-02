@@ -1,36 +1,36 @@
 <template>
   <section class="section-outer section-features">
     <div class="section-inner">
-      <h5 class="ta-с">ABOUT US</h5>
-      <h4 class="ta-с">Read about our app</h4>
+      <h2 class="ta-с">ABOUT US</h2>
+      <div class="ta-с section-subtitle">Read about our app</div>
 
       <ul class="features-list ta-с">
         <li class="features-list__item">
           <div class="features-list__item-icon">
             <img src="../assets/icon-features-home.svg" alt="icon">
           </div>
-          <div class="features-list__item-title">Overview</div>
+          <h3 class="features-list__item-title">Overview</h3>
           <div class="features-list__item-text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</div>
         </li>
         <li class="features-list__item">
           <div class="features-list__item-icon">
             <img src="../assets/icon-features-files.svg" alt="icon">
           </div>
-          <div class="features-list__item-title">Files</div>
+          <h3 class="features-list__item-title">Files</h3>
           <div class="features-list__item-text">No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.</div>
         </li>
         <li class="features-list__item">
           <div class="features-list__item-icon">
             <img src="../assets/icon-features-chats.svg" alt="icon">
           </div>
-          <div class="features-list__item-title">Meeting chats</div>
+          <h3 class="features-list__item-title">Meeting chats</h3>
           <div class="features-list__item-text">Vim ne tacimates neglegentur. Erat diceret omittam at est.</div>
         </li>
         <li class="features-list__item">
           <div class="features-list__item-icon">
             <img src="../assets/icon-features-events.svg" alt="icon">
           </div>
-          <div class="features-list__item-title">Save events</div>
+          <h3 class="features-list__item-title">Save events</h3>
           <div class="features-list__item-text">Nisl idque mel ea, nominati voluptatum.</div>
         </li>
       </ul>
@@ -59,12 +59,13 @@ export default {
 .section-features {
   background: 50% 40% no-repeat url("../../src/assets/clouds-features.svg");
 
-  h5 {
+  h2 {
     margin-bottom: $base * 5;
   }
 
-  h4 {
+  .section-subtitle {
     margin-bottom: $base * 23;
+    font-size: $fs-lg + 6;
     font-weight: $fw-medium;
   }
 
@@ -130,6 +131,7 @@ export default {
 
     &-title {
       @include opensans;
+      font-size: $fs-md - 1;
       font-weight: $fw-bold;
       color: $color-secondary-800;
       margin-bottom: $base * 6;

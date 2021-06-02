@@ -2,8 +2,8 @@
   <section class="section-outer section-quotes">
     <div class="section-inner">
       <div class="section-quotes__left">
-        <h5>TESTIMONIALS</h5>
-        <h3>Customers's quotes</h3>
+        <h2>TESTIMONIALS</h2>
+        <div class="section-subtitle">Customers's quotes</div>
         <div class="text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.</div>
       </div>
 
@@ -50,11 +50,12 @@ export default {
     justify-content: center;
     flex-basis: 45%;
 
-    h5 {
+    h2 {
       margin-bottom: $base * 7;
     }
 
-    h3 {
+    .section-subtitle {
+      font-size: $fs-xl - 12;
       font-weight: $fw-medium;
       margin-bottom: $base * 2;
     }

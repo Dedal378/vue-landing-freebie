@@ -2,13 +2,14 @@
   <section class="section-outer section-newsletter">
     <div class="section-inner">
       <div class="section-newsletter__left">
-        <div class="section-newsletter__left-title">Sign up for newsletter</div>
+        <h2 class="section-newsletter__left-title">Sign up for newsletter</h2>
         <div class="section-newsletter__left-text">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</div>
       </div>
 
       <div class="section-newsletter__right">
-        <form class="form-newsletter" action="">
-          <input class="input input--size-lg form-newsletter__input" type="email" placeholder="Email address" />
+        <form class="form-newsletter">
+          <label for="email" class="visually-hidden">Email: </label>
+          <input id="email" class="input input--size-lg form-newsletter__input" type="email" placeholder="Email address" />
           <button class="btn btn--secondary btn--size-lg form-newsletter__btn">Save me</button>
         </form>
       </div>
@@ -41,6 +42,7 @@ export default {
       margin-bottom: $base * 4;
       font-size: $fs-lg;
       font-weight: $fw-bold;
+      text-transform: none;
     }
 
     &-text {

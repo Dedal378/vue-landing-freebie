@@ -4,11 +4,13 @@
       <div class="section-plan__content">
         <img class="aside-image" src="../assets/illustration.png" alt="picture">
 
-        <h5>DESKTOP AND MOBILE APP</h5>
-        <h3><span>Plan</span> and <span>manage</span></h3>
+        <h2>DESKTOP AND MOBILE APP</h2>
+        <div class="section-subtitle"><span>Plan</span> and <span>manage</span></div>
+
         <div class="text">
           Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.
         </div>
+
         <div class="btn-group">
           <a href="#" class="btn btn--secondary">
             View video
@@ -43,11 +45,12 @@ export default {
   &__content {
     width: 43%;
 
-    h5 {
+    h2 {
       margin-bottom: $base * 7;
     }
 
-    h3 {
+    .section-subtitle {
+      font-size: $fs-xl - 12;
       font-weight: $fw-light;
 
       span {
@@ -57,7 +60,7 @@ export default {
 
     .text {
       font-size: $fs-md;
-      margin-bottom:w $base * 12;
+      margin-bottom: $base * 12;
       line-height: 2;
     }
 

@@ -1,8 +1,8 @@
 <template>
   <section class="section-outer section-get-started">
     <div class="section-inner">
-      <h5>PLAN YOUR LIFE</h5>
-      <h2>Get <span>started</span> now</h2>
+      <h2>PLAN YOUR LIFE</h2>
+      <div class="section-subtitle">Get <span>started</span> now</div>
 
       <div class="text">
         Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.
@@ -45,11 +45,12 @@ export default {
     z-index: 10;
   }
 
-  h2, h5 {
+  h2 {
     color: $color-white;
   }
 
-  h2 {
+  .section-subtitle {
+    color: $color-white;
     font-weight: $fw-light;
 
     span {

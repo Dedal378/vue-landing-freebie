@@ -4,7 +4,7 @@
 
       <div class="main-navigation">
         <div class="logo">
-          <a class="logo__link" href="#"></a>
+          <a class="logo__link" href="#" aria-label="Logo in footer"></a>
         </div>
 
         <div class="nav">

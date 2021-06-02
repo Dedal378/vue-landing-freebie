@@ -1,11 +1,13 @@
 <template>
   <section class="section-outer section-customers">
+    <h2 class="visually-hidden">CUSTOMERS</h2>
+
     <div class="section-inner">
-      <a href="#"><img src="../assets/logo-bitbucket.svg" alt="icon"></a>
-      <a href="#"><img src="../assets/logo-apple.svg" alt="icon"></a>
-      <a href="#"><img src="../assets/logo-facebook.svg" alt="icon"></a>
-      <a href="#"><img src="../assets/logo-atlassian.svg" alt="icon"></a>
-      <a href="#"><img src="../assets/logo-audi.svg" alt="icon"></a>
+      <a href="#" aria-label="BitBucket"><img src="../assets/logo-bitbucket.svg" alt="icon"></a>
+      <a href="#" aria-label="Apple"><img src="../assets/logo-apple.svg" alt="icon"></a>
+      <a href="#" aria-label="Facebook"><img src="../assets/logo-facebook.svg" alt="icon"></a>
+      <a href="#" aria-label="Atlassian"><img src="../assets/logo-atlassian.svg" alt="icon"></a>
+      <a href="#" aria-label="Audi"><img src="../assets/logo-audi.svg" alt="icon"></a>
     </div>
   </section>
 </template>

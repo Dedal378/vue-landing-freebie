@@ -1,8 +1,8 @@
 <template>
   <section class="section-outer section-faq">
     <div class="section-inner">
-      <h5 class="ta-с">CUSTOMER HELP</h5>
-      <h4 class="ta-с">Frequently asked questions</h4>
+      <h2 class="ta-с">CUSTOMER HELP</h2>
+      <div class="ta-с section-subtitle">Frequently asked questions</div>
 
       <ul class="faq-accordion">
         <li class="faq-accordion__item">
@@ -12,9 +12,8 @@
                 <path class="arrow" d="M16 9L9 2L2 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <div class="faq-accordion__item-trigger-text">Reque insolens in vel?</div>
+            <h3 class="faq-accordion__item-trigger-title">Reque insolens in vel?</h3>
           </div>
-
           <div class="faq-accordion__item-content">
             <div class="faq-accordion__item-content-text">
               Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
@@ -32,9 +31,8 @@
                 <path class="arrow" d="M16 9L9 2L2 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <div class="faq-accordion__item-trigger-text">Vis rebum error graecis ea, id sit postea accusamus?</div>
+            <h3 class="faq-accordion__item-trigger-title">Vis rebum error graecis ea, id sit postea accusamus?</h3>
           </div>
-
           <div class="faq-accordion__item-content">
             <div class="faq-accordion__item-content-text">
               Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
@@ -52,9 +50,28 @@
                 <path class="arrow" d="M16 9L9 2L2 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <div class="faq-accordion__item-trigger-text">Lorem repudiandae ne nec?</div>
+            <h3 class="faq-accordion__item-trigger-title">Lorem repudiandae ne nec?</h3>
           </div>
+          <div class="faq-accordion__item-content">
+            <div class="faq-accordion__item-content-text">
+              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+            </div>
+            <div class="faq-accordion__item-content-btn">
+              <a href="#" class="btn btn--grayscale">Go to documentation</a>
+            </div>
+          </div>
+        </li>
 
+
+        <li class="faq-accordion__item">
+          <div class="faq-accordion__item-trigger">
+            <div class="faq-accordion__item-trigger-icon">
+              <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="arrow" d="M16 9L9 2L2 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="faq-accordion__item-trigger-title">Ad dicit numquam vel. Et eos iudico feugait percipitur?</h3>
+          </div>
           <div class="faq-accordion__item-content">
             <div class="faq-accordion__item-content-text">
               Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
@@ -72,29 +89,8 @@
                 <path class="arrow" d="M16 9L9 2L2 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <div class="faq-accordion__item-trigger-text">Ad dicit numquam vel. Et eos iudico feugait percipitur?</div>
+            <h3 class="faq-accordion__item-trigger-title">Sea no dico percipitur. Fierent constituam definitiones id eum?</h3>
           </div>
-
-          <div class="faq-accordion__item-content">
-            <div class="faq-accordion__item-content-text">
-              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-            </div>
-            <div class="faq-accordion__item-content-btn">
-              <a href="#" class="btn btn--grayscale">Go to documentation</a>
-            </div>
-          </div>
-        </li>
-
-        <li class="faq-accordion__item">
-          <div class="faq-accordion__item-trigger">
-            <div class="faq-accordion__item-trigger-icon">
-              <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="arrow" d="M16 9L9 2L2 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <div class="faq-accordion__item-trigger-text">Sea no dico percipitur. Fierent constituam definitiones id eum?</div>
-          </div>
-
           <div class="faq-accordion__item-content">
             <div class="faq-accordion__item-content-text">
               Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
@@ -117,11 +113,12 @@ export default {
 
 <style scoped lang="scss">
 .section-faq {
-  h5 {
+  h2 {
     margin-bottom: $base * 5;
   }
 
-  h4 {
+  .section-subtitle {
+    font-size: $fs-lg + 6;
     font-weight: $fw-medium;
     margin-bottom: $base * 17;
   }
@@ -134,11 +131,11 @@ export default {
 
   &__item {
     $parent: &;
-    border-bottom: 1px solid $color-primary-50;
+    border-bottom: 1px solid $color-primary-100;
 
     &-trigger {
       display: flex;
-      padding: $base * 4;
+      padding: $base * 7;
       cursor: pointer;
 
       &-icon {
@@ -150,7 +147,7 @@ export default {
         }
       }
 
-      &-text {
+      &-title {
         @include quicksand;
         font-size: $fs-md;
         font-weight: $fw-medium;
@@ -165,7 +162,7 @@ export default {
       #{$parent}-trigger {
         color: $color-primary-900;
 
-        &-text {
+        &-title {
           font-weight: $fw-bold;
         }
 

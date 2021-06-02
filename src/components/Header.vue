@@ -3,7 +3,7 @@
     <div class="section-inner section-inner--wide">
       <div class="main-navigation">
         <h1 class="logo">
-          <a class="logo__link" href="#"></a>
+          <a class="logo__link" href="#" aria-label="Logo in header"></a>
         </h1>
 
         <div class="nav">

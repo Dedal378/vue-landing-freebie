@@ -1,23 +1,23 @@
 <template>
   <section class="section-outer section-blog">
     <div class="section-inner">
-      <h5 class="ta-с">OUR RESOURCES</h5>
-      <h4 class="ta-с">Start reading our blog</h4>
+      <h2 class="ta-с">OUR RESOURCES</h2>
+      <div class="ta-с section-subtitle">Start reading our blog</div>
 
       <div class="slider-wrapper">
         <ul class="slider-blog">
           <li class="slider-blog__item">
 
             <div class="slider-blog__item-gallery">
-              <a href="#" class="image-link image-link--b">
+              <a href="#" class="image-link image-link--b" aria-label="image 1">
                 <img src="../assets/img-001.jpg" alt="image">
                 <span class="lens"></span>
               </a>
-              <a href="#" class="image-link image-link--s-1">
+              <a href="#" class="image-link image-link--s-1" aria-label="image 2">
                 <img src="../assets/img-002.jpg" alt="image">
                 <span class="lens"></span>
               </a>
-              <a href="#" class="image-link image-link--s-2">
+              <a href="#" class="image-link image-link--s-2" aria-label="image 3">
                 <img src="../assets/img-003.jpg" alt="image">
                 <span class="lens"></span>
               </a>
@@ -35,8 +35,8 @@
           </li>
         </ul>
 
-        <a href="#" class="btn-blog btn-blog--prev"></a>
-        <a href="#" class="btn-blog btn-blog--next"></a>
+        <a href="#" class="btn-blog btn-blog--prev" aria-label="Previous slide"></a>
+        <a href="#" class="btn-blog btn-blog--next" aria-label="Next slide"></a>
       </div>
 
       <ul class="dots">
@@ -58,8 +58,9 @@ export default {
 .section-blog {
   background-color: $color-primary-50;
 
-  h4 {
-    margin-bottom: $base * 23;
+  .section-subtitle {
+    font-size: $fs-lg + 6;
+    font-weight: $fw-medium;
   }
 }
 
@@ -95,7 +96,7 @@ export default {
         display: block;
         border-radius: $base + 1;
         overflow: hidden;
-        box-shadow: 0px $base*4 $base*25 $color-primary-50;
+        box-shadow: 0 $base*4 $base*25 $color-primary-50;
 
         .lens {
           position: absolute;
@@ -176,6 +177,8 @@ export default {
       }
 
       .title {
+        color: $color-secondary-900;
+        font-size: $fs-xl - 12;
         margin-bottom: $base * 8;
       }
 
