@@ -98,22 +98,23 @@ export default {
         overflow: hidden;
         box-shadow: 0 $base*4 $base*25 $color-gray-50;
 
-        .lens {
+        &::after {
+          content: '';
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%);
           display: block;
           width: $base * 16;
           height: $base * 16;
           background: no-repeat 50% 50% url("../assets/icon-blog-search.svg");
           border-radius: 100%;
           opacity: 0;
+          transform: translate(-50%, -50%);
           transition: $transition;
         }
 
         &:hover {
-          .lens {
+          &::after {
             opacity: 1;
           }
         }
