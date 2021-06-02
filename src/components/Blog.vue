@@ -11,15 +11,12 @@
             <div class="slider-blog__item-gallery">
               <a href="#" class="image-link image-link--b" aria-label="image 1">
                 <img src="../assets/img-001.jpg" alt="image">
-                <span class="lens"></span>
               </a>
               <a href="#" class="image-link image-link--s-1" aria-label="image 2">
                 <img src="../assets/img-002.jpg" alt="image">
-                <span class="lens"></span>
               </a>
               <a href="#" class="image-link image-link--s-2" aria-label="image 3">
                 <img src="../assets/img-003.jpg" alt="image">
-                <span class="lens"></span>
               </a>
             </div>
 
@@ -89,7 +86,7 @@ export default {
       display: grid;
       grid-template-rows: repeat(2, $base*30);
       grid-template-columns: repeat(3, $base*30);
-      grid-gap: $base*4;
+      grid-gap: $base * 4;
 
       .image-link {
         position: relative;
@@ -163,7 +160,6 @@ export default {
     }
 
     &-content {
-
       .btn-group {
         .btn--primary {
           margin-right: $base * 6;
@@ -184,7 +180,7 @@ export default {
       .text {
         @include roboto;
         color: $color-gray-500;
-        font-size: 14px;
+        font-size: $fs-s - 1;
         margin-bottom: $base * 8;
         line-height: 1.9;
 
