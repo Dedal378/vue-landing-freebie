@@ -65,7 +65,7 @@ export default {
 
   .section-subtitle {
     margin-bottom: $base * 23;
-    font-size: $fs-m + 6;
+    font-size: $fs-l;
     font-weight: $fw-medium;
   }
 

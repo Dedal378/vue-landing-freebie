@@ -20,22 +20,22 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   @include roboto;
   color: $color-blue-900;
-  font-size: 10px;
+  font-size: $fs-xxs;
   margin-bottom: $base * 4;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: $fs-xl;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: $fs-l;
 }
 
 h5 {
   @include roboto;
-  font-size: 10px;
+  font-size: $fs-xxs;
   margin-bottom: $base * 4;
 }
 
@@ -43,7 +43,7 @@ h5 {
   @include quicksand;
   color: $color-blue-900;
   margin-bottom: $base * 7;
-  font-size: 48px;
+  font-size: $fs-xxl;
 }
 
 .ta-с {

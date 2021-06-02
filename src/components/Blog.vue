@@ -59,7 +59,7 @@ export default {
   background-color: $color-gray-50;
 
   .section-subtitle {
-    font-size: $fs-m + 6;
+    font-size: $fs-l;
     font-weight: $fw-medium;
   }
 }

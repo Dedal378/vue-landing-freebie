@@ -118,7 +118,7 @@ export default {
   }
 
   .section-subtitle {
-    font-size: $fs-m + 6;
+    font-size: $fs-l;
     font-weight: $fw-medium;
     margin-bottom: $base * 17;
   }
@@ -182,7 +182,7 @@ export default {
 
       &-text {
         flex-grow: 1;
-        font-size: $fs-xs + 2;
+        font-size: $fs-s - 1;
         letter-spacing: 0.03em;
         line-height: 1.9;
       }
