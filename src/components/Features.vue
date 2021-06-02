@@ -65,7 +65,7 @@ export default {
 
   .section-subtitle {
     margin-bottom: $base * 23;
-    font-size: $fs-lg + 6;
+    font-size: $fs-m + 6;
     font-weight: $fw-medium;
   }
 
@@ -79,16 +79,16 @@ export default {
       display: inline-flex;
       align-items: center;
       margin: 0 $base*4;
-      font-size: $fs-sm;
+      font-size: $fs-xs;
       font-weight: $fw-medium;
-      color: $color-primary-300;
+      color: $color-gray-300;
 
       &::before, &::after {
         content: '';
         display: block;
         width: $base * 4;
         height: 1px;
-        background-color: $color-primary-100;
+        background-color: $color-gray-100;
       }
 
       &::before { margin-right: $base * 4; }
@@ -114,7 +114,7 @@ export default {
       width: $base * 7;
       top: $base * 32;
       right: 120%;
-      background-color: $color-primary-100;
+      background-color: $color-gray-100;
     }
 
     &-icon {
@@ -126,23 +126,23 @@ export default {
       margin: 0 auto;
       margin-bottom: $base * 8;
       border-radius: 100%;
-      background-color: $color-primary-50;
+      background-color: $color-gray-50;
     }
 
     &-title {
       @include opensans;
-      font-size: $fs-md - 1;
+      font-size: $fs-s - 1;
       font-weight: $fw-bold;
-      color: $color-secondary-800;
+      color: $color-blue-800;
       margin-bottom: $base * 6;
 
     }
 
     &-text {
       @include opensans;
-      font-size: $fs-sm;
+      font-size: $fs-xs;
       font-weight: $fw-medium;
-      color: $color-primary-300;
+      color: $color-gray-300;
       line-height: 2;
     }
   }

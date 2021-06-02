@@ -61,7 +61,7 @@ export default {
   .text {
     max-width: 69%;
     margin: 0 auto $base*12;
-    font-size: $fs-md;
+    font-size: $fs-s;
     line-height: 2;
   }
 

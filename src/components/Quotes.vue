@@ -37,7 +37,7 @@ export default {
 
 <style scoped lang="scss">
 .section-quotes {
-  background: linear-gradient(180deg, $color-secondary-50 0%, $color-primary-50 100%);
+  background: linear-gradient(180deg, $color-blue-50 0%, $color-gray-50 100%);
 
   .section-inner {
     display: flex;
@@ -55,15 +55,15 @@ export default {
     }
 
     .section-subtitle {
-      font-size: $fs-xl - 12;
+      font-size: $fs-xl;
       font-weight: $fw-medium;
       margin-bottom: $base * 2;
     }
 
     .text {
       @include opensans;
-      color: $color-primary-200;
-      font-size: $fs-sm;
+      color: $color-gray-200;
+      font-size: $fs-xs;
       line-height: 1.9;
     }
   }
@@ -79,12 +79,12 @@ export default {
     &__item {
       position: relative;
       padding: $base*10 $base*17 $base*15;
-      border: 1px solid $color-primary-50;
+      border: 1px solid $color-gray-50;
       background-color: $color-white;
-      box-shadow: 0 $base+1 $base*13 $color-primary-50;
+      box-shadow: 0 $base+1 $base*13 $color-gray-50;
 
       &-text {
-        color: $color-primary-400;
+        color: $color-gray-400;
         font-size: 14px;
         letter-spacing: 0.03em;
         line-height: 1.9;

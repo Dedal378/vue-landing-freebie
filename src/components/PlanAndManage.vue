@@ -34,7 +34,7 @@ export default {
 <style scoped lang="scss">
 .section-plan {
   position: relative;
-  background-color: $color-primary-50;
+  background-color: $color-gray-50;
   overflow: hidden;
 
   .section-inner {
@@ -50,7 +50,7 @@ export default {
     }
 
     .section-subtitle {
-      font-size: $fs-xl - 12;
+      font-size: $fs-xl;
       font-weight: $fw-light;
 
       span {
@@ -59,7 +59,7 @@ export default {
     }
 
     .text {
-      font-size: $fs-md;
+      font-size: $fs-s;
       margin-bottom: $base * 12;
       line-height: 2;
     }

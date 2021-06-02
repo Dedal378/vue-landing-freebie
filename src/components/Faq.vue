@@ -118,7 +118,7 @@ export default {
   }
 
   .section-subtitle {
-    font-size: $fs-lg + 6;
+    font-size: $fs-m + 6;
     font-weight: $fw-medium;
     margin-bottom: $base * 17;
   }
@@ -131,7 +131,7 @@ export default {
 
   &__item {
     $parent: &;
-    border-bottom: 1px solid $color-primary-100;
+    border-bottom: 1px solid $color-gray-100;
 
     &-trigger {
       display: flex;
@@ -143,24 +143,24 @@ export default {
         transform: rotate(180deg);
 
         .arrow {
-          stroke: $color-primary-400;
+          stroke: $color-gray-400;
         }
       }
 
       &-title {
         @include quicksand;
-        font-size: $fs-md;
+        font-size: $fs-s;
         font-weight: $fw-medium;
       }
     }
 
     &--active {
       .arrow {
-        stroke: $color-primary-900;
+        stroke: $color-gray-900;
       }
 
       #{$parent}-trigger {
-        color: $color-primary-900;
+        color: $color-gray-900;
 
         &-title {
           font-weight: $fw-bold;
@@ -182,7 +182,7 @@ export default {
 
       &-text {
         flex-grow: 1;
-        font-size: $fs-sm + 2;
+        font-size: $fs-xs + 2;
         letter-spacing: 0.03em;
         line-height: 1.9;
       }

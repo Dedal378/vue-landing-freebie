@@ -101,10 +101,10 @@ export default {
 
 .copyright {
   @include quicksand;
-  font-size: $fs-sm;
+  font-size: $fs-xs;
   font-weight: $fw-medium;
   margin-top: $base * 7;
   margin-left: $base * 24;
-  color: $color-primary-200;
+  color: $color-gray-200;
 }
 </style>

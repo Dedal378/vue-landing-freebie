@@ -25,7 +25,7 @@ export default {
 
 <style scoped lang="scss">
 .section-newsletter {
-  background-color: $color-primary-50;
+  background-color: $color-gray-50;
 
   .section-inner {
     display: flex;
@@ -38,15 +38,15 @@ export default {
 
     &-title {
       @include quicksand();
-      color: $color-secondary-900;
+      color: $color-blue-900;
       margin-bottom: $base * 4;
-      font-size: $fs-lg;
+      font-size: $fs-m;
       font-weight: $fw-bold;
       text-transform: none;
     }
 
     &-text {
-      font-size: $fs-md - 1;
+      font-size: $fs-s - 1;
       line-height: 1.9;
     }
   }

@@ -56,10 +56,10 @@ export default {
 
 <style scoped lang="scss">
 .section-blog {
-  background-color: $color-primary-50;
+  background-color: $color-gray-50;
 
   .section-subtitle {
-    font-size: $fs-lg + 6;
+    font-size: $fs-m + 6;
     font-weight: $fw-medium;
   }
 }
@@ -71,9 +71,9 @@ export default {
 .slider-blog {
   @include list-null();
   margin-bottom: $base * 25;
-  border: 1px solid $color-primary-50;
+  border: 1px solid $color-gray-50;
   background-color: $color-white;
-  box-shadow: 0 $base*3 $base*13 $color-primary-50;
+  box-shadow: 0 $base*3 $base*13 $color-gray-50;
 
   &__item {
     display: flex;
@@ -96,7 +96,7 @@ export default {
         display: block;
         border-radius: $base + 1;
         overflow: hidden;
-        box-shadow: 0 $base*4 $base*25 $color-primary-50;
+        box-shadow: 0 $base*4 $base*25 $color-gray-50;
 
         .lens {
           position: absolute;
@@ -139,7 +139,7 @@ export default {
           grid-column: 1 / 3;
 
           &::before {
-            background: linear-gradient(200deg, transparent, $color-warning-500);
+            background: linear-gradient(200deg, transparent, $color-yellow-500);
           }
         }
 
@@ -148,7 +148,7 @@ export default {
           grid-column: 3 / 4;
 
           &::before {
-            background: linear-gradient(230deg, transparent, $color-danger-500);
+            background: linear-gradient(230deg, transparent, $color-red-500);
           }
         }
 
@@ -177,14 +177,14 @@ export default {
       }
 
       .title {
-        color: $color-secondary-900;
-        font-size: $fs-xl - 12;
+        color: $color-blue-900;
+        font-size: $fs-xl;
         margin-bottom: $base * 8;
       }
 
       .text {
         @include roboto;
-        color: $color-primary-500;
+        color: $color-gray-500;
         font-size: 14px;
         margin-bottom: $base * 8;
         line-height: 1.9;

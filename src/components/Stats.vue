@@ -27,7 +27,7 @@ export default {
 .section-stats {
   @include quicksand;
   display: flex;
-  background-color: $color-secondary-60;
+  background-color: $color-blue-60;
 
   &__left, &__right {
     display: flex;
@@ -40,7 +40,7 @@ export default {
     align-items: flex-end;
     text-align: right;
     color: $color-white;
-    background-color: $color-secondary-300;
+    background-color: $color-blue-300;
 
     h2 {
       color: $color-white;
@@ -48,10 +48,10 @@ export default {
   }
 
   &__right {
-    color: $color-secondary-300;
+    color: $color-blue-300;
 
     h2 {
-      color: $color-secondary-300;
+      color: $color-blue-300;
     }
   }
 
@@ -60,14 +60,14 @@ export default {
   }
 
   &__number {
-    font-size: $fs-xl;
+    font-size: $fs-xxl;
     font-weight: $fw-light;
     margin-bottom: $base * 7;
   }
 
   &__text {
     width: 42%;
-    font-size: $fs-lg;
+    font-size: $fs-m;
     line-height: 1.5;
   }
 }

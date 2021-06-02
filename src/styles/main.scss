@@ -3,7 +3,7 @@
 //<editor-fold desc="Common">
 body {
   @include roboto;
-  color: $color-primary-500;
+  color: $color-gray-500;
 }
 
 a {
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   @include roboto;
-  color: $color-secondary-900;
+  color: $color-blue-900;
   font-size: 10px;
   margin-bottom: $base * 4;
   text-transform: uppercase;
@@ -41,7 +41,7 @@ h5 {
 
 .section-subtitle {
   @include quicksand;
-  color: $color-secondary-900;
+  color: $color-blue-900;
   margin-bottom: $base * 7;
   font-size: 48px;
 }
@@ -63,12 +63,12 @@ h5 {
     width: $base * 2;
     height: $base * 2;
     border-radius: 100%;
-    background-color: $color-primary-200;
+    background-color: $color-gray-200;
     cursor: pointer;
     transition: $transition;
 
     &--active {
-      background-color: $color-secondary-600;
+      background-color: $color-blue-600;
     }
 
     & + & {
@@ -91,12 +91,12 @@ h5 {
 .input {
   @include quicksand();
   padding: $base*3 $base*4;
-  color: $color-primary-700;
-  font-size: $fs-sm;
+  color: $color-gray-700;
+  font-size: $fs-xs;
   font-weight: $fw-bold;
   border: 1px solid transparent;
   border-radius: $base/2;
-  background: $color-primary-100;
+  background: $color-gray-100;
 
   &--size-lg {
     padding: $base*5 $base*15 $base*5 $base*6;
@@ -108,7 +108,7 @@ h5 {
   @include quicksand;
   display: inline-block;
   box-sizing: border-box;
-  font-size: $fs-sm;
+  font-size: $fs-xs;
   font-weight: $fw-bold;
   padding: $base*3 $base*4;
   margin: 0;
@@ -126,24 +126,24 @@ h5 {
   }
 
   &--primary {
-    color: $color-secondary-700;
-    background-color: $color-secondary-60;
+    color: $color-blue-700;
+    background-color: $color-blue-60;
 
     &:hover {
-      background-color: darken($color-secondary-60, 5%);
+      background-color: darken($color-blue-60, 5%);
     }
   }
 
   &--secondary {
     color: $color-white;
-    background-color: $color-secondary-500;
+    background-color: $color-blue-500;
 
     &:hover {
-      background-color: darken($color-secondary-500, 5%);
+      background-color: darken($color-blue-500, 5%);
     }
 
     &-inverted {
-      color: $color-primary-900;
+      color: $color-gray-900;
       background-color: $color-white;
 
       &:hover {
@@ -153,39 +153,39 @@ h5 {
   }
 
   &--grayscale {
-    color: $color-primary-600;
-    background-color: $color-primary-50;
+    color: $color-gray-600;
+    background-color: $color-gray-50;
 
     &:hover {
-      background-color: darken($color-primary-50, 5%);
+      background-color: darken($color-gray-50, 5%);
     }
   }
 
   &--danger {
-    color: $color-danger-600;
-    background-color: $color-danger-50;
+    color: $color-red-600;
+    background-color: $color-red-50;
 
     &:hover {
-      background-color: darken($color-danger-50, 5%);
+      background-color: darken($color-red-50, 5%);
     }
   }
 
   &--transparent {
-    color: $color-primary-300;
-    border: 1px solid $color-primary-100;
+    color: $color-gray-300;
+    border: 1px solid $color-gray-100;
 
     &:hover {
-      color: darken($color-primary-300, 10%);
-      border: 1px solid darken($color-primary-100, 10%);
+      color: darken($color-gray-300, 10%);
+      border: 1px solid darken($color-gray-100, 10%);
     }
 
     &-inverted {
-      color: $color-primary-100;
-      border: 1px solid $color-secondary-100;
+      color: $color-gray-100;
+      border: 1px solid $color-blue-100;
 
       &:hover {
-        color: lighten($color-primary-100, 9%);
-        border: 1px solid lighten($color-secondary-100, 10%);
+        color: lighten($color-gray-100, 9%);
+        border: 1px solid lighten($color-blue-100, 10%);
       }
     }
   }
@@ -235,7 +235,7 @@ h5 {
     width: $base * 6;
     height: $base * 6;
     border-radius: 100%;
-    background-color: $color-secondary-400;
+    background-color: $color-blue-400;
   }
 }
 
@@ -250,18 +250,18 @@ h5 {
 
     &-link {
       @include quicksand;
-      font-size: $fs-sm;
-      color: $color-primary-700;
+      font-size: $fs-xs;
+      color: $color-gray-700;
       font-weight: $fw-medium;
       transition: $transition;
 
       &:hover {
-        color: $color-secondary-200;
+        color: $color-blue-200;
       }
 
       &--active {
         font-weight: $fw-bold;
-        color: $color-secondary-200;
+        color: $color-blue-200;
       }
     }
   }
@@ -284,13 +284,13 @@ h5 {
 
     &-link {
       path {
-        fill: $color-primary-700;
+        fill: $color-gray-700;
         transition: $transition;
       }
 
       &:hover {
         path {
-          fill: $color-secondary-200;
+          fill: $color-blue-200;
         }
       }
     }

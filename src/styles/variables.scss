@@ -29,10 +29,12 @@ $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 
-$fs-sm: 12px;
-$fs-md: 15px;
-$fs-lg: 18px;
-$fs-xl: 48px;
+$fs-xs: 12px;
+$fs-s: 15px;
+$fs-m: 18px;
+$fs-l: 24px;
+$fs-xl: 36px;
+$fs-xxl: 48px;
 
 $padding-vertical-xs: $base * 5;
 $padding-vertical-sm: $base * 15;
@@ -43,48 +45,43 @@ $padding-vertical: $base * 30;
 
 // Gray
 //$color-primary-50: #d1d1e4;
-$color-primary-50: #f5f8ff;
-$color-primary-100: #e6e9f2;
-$color-primary-200: #aeb8d0;
-$color-primary-300: #adb4d2;
-$color-primary-400: #8e96b7;
-$color-primary-500: #8d96bd;
-$color-primary-600: #7382a3;
-$color-primary-700: #7a85ad;
-$color-primary-800: #676f95;
-$color-primary-900: #495274;
+$color-gray-50: #f5f8ff;
+$color-gray-100: #e6e9f2;
+$color-gray-200: #aeb8d0;
+$color-gray-300: #adb4d2;
+$color-gray-400: #8e96b7;
+$color-gray-500: #8d96bd;
+$color-gray-600: #7382a3;
+$color-gray-700: #7a85ad;
+$color-gray-800: #676f95;
+$color-gray-900: #495274;
 
 // Blue
-$color-secondary-50: #e9efff;
-$color-secondary-60: #d2e1ff;
-$color-secondary-100: #a0b4ff;
-$color-secondary-200: #6188ff;
-$color-secondary-300: #5e80ff;
-$color-secondary-400: #5e81fe;
-$color-secondary-500: #4c85ff;
-$color-secondary-600: #5283ff;
-$color-secondary-700: #3a79ff;
-$color-secondary-800: #4074f8;
-$color-secondary-900: #3d4f9f;
+$color-blue-50: #e9efff;
+$color-blue-60: #d2e1ff;
+$color-blue-100: #a0b4ff;
+$color-blue-200: #6188ff;
+$color-blue-300: #5e80ff;
+$color-blue-400: #5e81fe;
+$color-blue-500: #4c85ff;
+$color-blue-600: #5283ff;
+$color-blue-700: #3a79ff;
+$color-blue-800: #4074f8;
+$color-blue-900: #3d4f9f;
 
 // Red
-$color-danger-50: #ffd7d7;
-$color-danger-500: #ff3535;
-$color-danger-600: #d43f3f;
+$color-red-50: #ffd7d7;
+$color-red-500: #ff3535;
+$color-red-600: #d43f3f;
 
 // Cyan
 $color-cyan-500: #35aaff;
 
 // Warning
-$color-warning-500: #ffc735;
+$color-yellow-500: #ffc735;
 
 $color-white: #ffffff;
-$color-divider: $color-primary-100;
-
-//$color-primary: #495274;
-//$color-secondary: #6188ff;
-//$color-third: #adb3cb;
-
+$color-divider: $color-gray-100;
 //</editor-fold>
 
 $transition: .2s;
