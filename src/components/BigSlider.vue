@@ -2,6 +2,8 @@
   <section class="section-outer section-slider-big">
     <ul class="slider-big">
       <li class="slider-big__item">
+        <div class="slider-big__item icon-stats"></div>
+
         <div class="section-inner slider-big__item-content vertical-indent vertical-indent--m">
           <h2>PLAN YOUR LIFE</h2>
           <div class="section-subtitle">Increase your <span>productivity</span></div>
@@ -23,7 +25,6 @@
         </div>
       </li>
     </ul>
-    <div class="section-slider-big__icon-stats"></div>
 
     <ul class="dots">
       <li class="dots__item dots__item--active"></li>
@@ -45,14 +46,6 @@ export default {
   padding: 0;
   background-color: $color-gray-50;
 
-  &__icon-stats {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: 30.65% 84%/170px no-repeat url("../../src/assets/stats.svg");
-    top: 0;
-  }
-
   .dots {
     position: absolute;
     bottom: $base * 7;
@@ -63,13 +56,37 @@ export default {
 
 .slider-big {
   @include list-null();
+  position: relative;
 
   &__item {
+    position: relative;
     height: $base * 140;
     background:
         center/cover no-repeat url("../../src/assets/chart.svg"),
         35% 50% no-repeat url("../../src/assets/clouds.svg");
     text-align: center;
+
+    &.icon-stats {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background: 30.65% 84%/170px no-repeat url("../../src/assets/stats.svg");
+
+      @media (max-width: $breakpoint-xs-max) {
+        display: none;
+      }
+    }
+
+    .icon-play {
+      position: relative;
+      z-index: 53;
+
+      svg {
+        margin-left: 4px;
+        margin-top: 2px;
+      }
+    }
 
     &-content {
       .section-subtitle {
