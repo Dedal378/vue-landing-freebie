@@ -98,6 +98,10 @@ export default {
   @include list-null();
   margin: 0 0 $base*25;
 
+  @media (max-width: $breakpoint-md-max) {
+    margin: 0 0 $base*15;
+  }
+
   &__item {
     position: relative;
     flex-basis: 17%;

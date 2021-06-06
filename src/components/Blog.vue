@@ -72,6 +72,10 @@ export default {
     background-color: $color-white;
     box-shadow: 0 $base*3 $base*13 $color-gray-50;
 
+    @media (max-width: $breakpoint-md-max) {
+      margin: 0 0 $base*15;
+    }
+
     &__item {
       display: flex;
       justify-content: space-between;
