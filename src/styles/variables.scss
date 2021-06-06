@@ -1,51 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
-//<editor-fold desc="Mixins">
-@mixin roboto {
-  font-family: 'Roboto', sans-serif;
+//<editor-fold desc="MIXINS">
+  @mixin roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  @mixin quicksand {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  @mixin opensans {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  @mixin list-null {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+//</editor-fold>
+
+//<editor-fold desc="FUNCTIONS">
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
 }
 
-@mixin quicksand {
-  font-family: 'Quicksand', sans-serif;
-}
-
-@mixin opensans {
-  font-family: 'Open Sans', sans-serif;
-}
-
-@mixin list-null {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@function rem($num) {
+  @return (strip-unit($num) / 16) * 1rem;
 }
 //</editor-fold>
 
+$base: rem(4px);
 
-//<editor-fold desc="Variables">
-$base: 4px;
+$padding-vertical-sm: $base * 15;
+$padding-vertical: $base * 30;
 
-$fw-light: 100;
+$transition: .2s;
+
+//<editor-fold desc="FONTS SIZE">
+$fw-light: 300;
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 
-$fs-xxs: 10px;
-$fs-xs: 12px;
-$fs-s: 15px;
-$fs-m: 18px;
-$fs-l: 24px;
-$fs-xl: 36px;
-$fs-xxl: 48px;
+$fs-xxs: rem(10px);
+$fs-xs: rem(12px);
+$fs-s: rem(15px);
+$fs-m: rem(18px);
+$fs-l: rem(24px);
+$fs-xl: rem(36px);
+$fs-xxl: rem(48px);
+//</editor-fold>
 
-$padding-vertical-xs: $base * 5;
-$padding-vertical-sm: $base * 15;
-$padding-vertical: $base * 30;
-
-
-//<editor-fold desc="Colors">
+//<editor-fold desc="COLORS">
 
 // Gray
-//$color-primary-50: #d1d1e4;
 $color-gray-50: #f5f8ff;
 $color-gray-100: #e6e9f2;
 $color-gray-200: #aeb8d0;
@@ -85,6 +94,15 @@ $color-white: #ffffff;
 $color-divider: $color-gray-100;
 //</editor-fold>
 
-$transition: .2s;
-
+//<editor-fold desc="BREAKPOINT">
+$breakpoint-sm-min: 576px;
+$breakpoint-xs-max: $breakpoint-sm-min - 1;
+$breakpoint-md-min: 768px;
+$breakpoint-sm-max: $breakpoint-md-min - 1;
+$breakpoint-lg-min: 992px;
+$breakpoint-md-max: $breakpoint-lg-min - 1;
+$breakpoint-xl-min: 1200px;
+$breakpoint-lg-max: $breakpoint-xl-min - 1;
+$breakpoint-xxl-min: 1440px;
+$breakpoint-xl-max: $breakpoint-xxl-min - 1;
 //</editor-fold>

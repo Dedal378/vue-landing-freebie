@@ -1,6 +1,16 @@
 @import "./variables.scss";
 
 //<editor-fold desc="Common">
+/*html {
+  @media (max-width: $breakpoint-md-max) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    font-size: 10px;
+  }
+}*/
+
 body {
   @include roboto;
   color: $color-gray-500;
@@ -26,7 +36,7 @@ h2 {
 }
 
 h3 {
-  font-size: $fs-xl;
+  font-size: $fs-s;
 }
 
 h4 {
@@ -51,6 +61,7 @@ h5 {
 }
 
 .section-outer {
+  padding: 0 $base*5;
   border-bottom: 1px solid $color-divider;
 }
 
@@ -80,11 +91,63 @@ h5 {
 .section-inner {
   max-width: 900px;
   margin: 0 auto;
-  padding-top: $padding-vertical;
-  padding-bottom: $padding-vertical;
 
   &--wide {
     max-width: 1200px;
+  }
+}
+
+.vertical-indent {
+  &--xs {
+    padding-top: $base * 5;
+    padding-bottom: $base * 5;
+  }
+
+  &--s {
+    padding-top: $base * 15;
+    padding-bottom: $base * 15;
+  }
+
+  &--m {
+    padding-top: $base * 23;
+    padding-bottom: $base * 23;
+  }
+
+  &--l {
+    padding-top: $base * 42;
+    padding-bottom: $base * 42;
+  }
+
+  &--xl {
+    padding-top: $base * 54;
+    padding-bottom: $base * 54;
+  }
+
+  @media (max-width: $breakpoint-md-max) {
+    &--xs {
+      padding-top: $base * 2;
+      padding-bottom: $base * 2;
+    }
+
+    &--s {
+      padding-top: $base * 10;
+      padding-bottom: $base * 10;
+    }
+
+    &--m {
+      padding-top: $base * 11;
+      padding-bottom: $base * 11;
+    }
+
+    &--l {
+      padding-top: $base * 21;
+      padding-bottom: $base * 21;
+    }
+
+    &--xl {
+      padding-top: $base * 27;
+      padding-bottom: $base * 27;
+    }
   }
 }
 
@@ -100,7 +163,7 @@ h5 {
 
   &--size-lg {
     padding: $base*5 $base*15 $base*5 $base*6;
-    border-radius: $base + 1;
+    border-radius: $base;
   }
 }
 
@@ -122,7 +185,7 @@ h5 {
 
   &--size-lg {
     padding: $base*5 $base*15;
-    border-radius: $base + 1;
+    border-radius: $base;
   }
 
   &--primary {
@@ -216,17 +279,77 @@ h5 {
   clip: rect(0 0 0 0);
   border: 0;
 }
-
 //</editor-fold>
 
 //<editor-fold desc="Header&Footer">
 .main-navigation {
   display: flex;
   align-items: center;
+
+  &__inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+    margin-left: $base * 18;
+
+    .section-header & {
+      @media (max-width: $breakpoint-md-max) {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        margin-left: 0;
+        padding: 0 $base * 5;
+        background-color: $color-white;
+        z-index: 7;
+      }
+    }
+
+    @media (max-width: $breakpoint-md-max) {
+      flex-direction: column;
+
+      .socials, .nav {
+        margin-bottom: $base * 4;
+      }
+
+      &, .socials, .btn-wrapper {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-md-max) {
+    .section-footer & {
+      flex-direction: column;
+
+      .logo {
+        margin-bottom: $base * 4;
+      }
+    }
+  }
 }
 
-.nav {
-  margin-left: $base * 18;
+.btn-burger {
+  display: none;
+  margin-left: auto;
+
+  &__line {
+    display: block;
+    width: $base * 4;
+    height: $base / 2;
+    background-color: $color-gray-200;
+
+    & + & {
+      margin-top: $base;
+    }
+  }
+
+  @media (max-width: $breakpoint-md-max) {
+    display: block;
+  }
 }
 
 .logo {

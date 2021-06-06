@@ -1,6 +1,6 @@
 <template>
   <section class="section-outer section-plan">
-    <div class="section-inner">
+    <div class="section-inner vertical-indent vertical-indent--xl">
       <div class="section-plan__content">
         <img class="aside-image" src="../assets/illustration.png" alt="picture">
 
@@ -37,13 +37,8 @@ export default {
   background-color: $color-gray-50;
   overflow: hidden;
 
-  .section-inner {
-    padding-top: $base * 52;
-    padding-bottom: $base * 54;
-  }
-
   &__content {
-    width: 43%;
+    width: 50%;
 
     h2 {
       margin-bottom: $base * 7;
@@ -78,6 +73,10 @@ export default {
       position: absolute;
       top: 15%;
       left: 41%;
+    }
+
+    @media (min-width: $breakpoint-lg-min) {
+      width: 43%;
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <section class="section-outer section-get-started">
-    <div class="section-inner">
+    <div class="section-inner vertical-indent vertical-indent--m">
       <h2>PLAN YOUR LIFE</h2>
       <div class="section-subtitle">Get <span>started</span> now</div>
 

@@ -1,6 +1,6 @@
 <template>
   <section class="section-outer section-features">
-    <div class="section-inner">
+    <div class="section-inner vertical-indent vertical-indent--l">
       <h2 class="ta-с">ABOUT US</h2>
       <div class="ta-с section-subtitle">Read about our app</div>
 
@@ -51,11 +51,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.section-inner {
-  padding-top: $base * 43;
-  padding-bottom: $base * 43;
-}
-
 .section-features {
   background: 50% 40% no-repeat url("../../src/assets/clouds-features.svg");
 

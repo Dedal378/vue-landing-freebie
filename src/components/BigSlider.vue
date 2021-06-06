@@ -2,7 +2,7 @@
   <section class="section-outer section-slider-big">
     <ul class="slider-big">
       <li class="slider-big__item">
-        <div class="section-inner slider-big__item-content">
+        <div class="section-inner slider-big__item-content vertical-indent vertical-indent--m">
           <h2>PLAN YOUR LIFE</h2>
           <div class="section-subtitle">Increase your <span>productivity</span></div>
 
@@ -42,6 +42,7 @@ export default {
 <style scoped lang="scss">
 .section-slider-big {
   position: relative;
+  padding: 0;
   background-color: $color-gray-50;
 
   &__icon-stats {

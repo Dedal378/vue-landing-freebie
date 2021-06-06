@@ -1,6 +1,6 @@
 <template>
   <section class="section-outer section-faq">
-    <div class="section-inner">
+    <div class="section-inner vertical-indent vertical-indent--l">
       <h2 class="ta-с">CUSTOMER HELP</h2>
       <div class="ta-с section-subtitle">Frequently asked questions</div>
 

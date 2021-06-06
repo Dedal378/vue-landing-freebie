@@ -1,6 +1,7 @@
 <template>
   <section class="section-outer section-stats">
     <h2 class="visually-hidden">Statistic</h2>
+
     <div class="section-stats__left">
       <div class="section-stats__icon">
         <img src="../assets/icon-blog-1.svg" alt="icon">
@@ -8,6 +9,7 @@
       <div class="section-stats__number">89%</div>
       <div class="section-stats__text">Customers who have increased their productivity</div>
     </div>
+
     <div class="section-stats__right">
       <div class="section-stats__icon">
         <img src="../assets/icon-blog-2.svg" alt="icon">
@@ -27,6 +29,7 @@ export default {
 .section-stats {
   @include quicksand;
   display: flex;
+  padding: 0;
   background-color: $color-blue-60;
 
   &__left, &__right {
@@ -66,9 +69,12 @@ export default {
   }
 
   &__text {
-    width: 42%;
     font-size: $fs-m;
     line-height: 1.5;
+
+    @media (min-width: $breakpoint-lg-min) {
+      width: 42%;
+    }
   }
 }
 

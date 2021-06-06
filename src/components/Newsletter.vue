@@ -1,6 +1,6 @@
 <template>
   <section class="section-outer section-newsletter">
-    <div class="section-inner">
+    <div class="section-inner vertical-indent vertical-indent--m">
       <div class="section-newsletter__left">
         <h2 class="section-newsletter__left-title">Sign up for newsletter</h2>
         <div class="section-newsletter__left-text">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</div>
@@ -31,6 +31,11 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $breakpoint-md-max) {
+      flex-direction: column;
+      align-items: unset;
+    }
   }
 
   &__left {
@@ -48,6 +53,10 @@ export default {
     &-text {
       font-size: $fs-s - 1;
       line-height: 1.9;
+    }
+
+    @media (max-width: $breakpoint-md-max) {
+      margin-bottom: $base * 5;
     }
   }
 

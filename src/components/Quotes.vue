@@ -1,6 +1,6 @@
 <template>
   <section class="section-outer section-quotes">
-    <div class="section-inner">
+    <div class="section-inner vertical-indent vertical-indent--m">
       <div class="section-quotes__left">
         <h2>TESTIMONIALS</h2>
         <div class="section-subtitle">Customers's quotes</div>
