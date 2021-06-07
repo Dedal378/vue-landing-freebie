@@ -2,7 +2,7 @@
   <section class="section-outer section-plan">
     <div class="section-inner vertical-indent vertical-indent--xl">
       <div class="section-plan__content">
-        <img class="aside-image" src="../assets/illustration.png" alt="picture">
+        <img class="aside-image" src="../assets/illustration.png" alt="picture" width="854" height="736">
 
         <h2>DESKTOP AND MOBILE APP</h2>
         <div class="section-subtitle"><span>Plan</span> and <span>manage</span></div>

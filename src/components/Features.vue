@@ -7,28 +7,28 @@
       <ul class="features-list ta-с">
         <li class="features-list__item">
           <div class="features-list__item-icon">
-            <img src="../assets/icon-features-home.svg" alt="icon">
+            <img src="../assets/icon-features-home.svg" alt="icon" width="18" height="21">
           </div>
           <h3 class="features-list__item-title">Overview</h3>
           <div class="features-list__item-text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</div>
         </li>
         <li class="features-list__item">
           <div class="features-list__item-icon">
-            <img src="../assets/icon-features-files.svg" alt="icon">
+            <img src="../assets/icon-features-files.svg" alt="icon" width="28" height="18">
           </div>
           <h3 class="features-list__item-title">Files</h3>
           <div class="features-list__item-text">No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.</div>
         </li>
         <li class="features-list__item">
           <div class="features-list__item-icon">
-            <img src="../assets/icon-features-chats.svg" alt="icon">
+            <img src="../assets/icon-features-chats.svg" alt="icon" width="22" height="20">
           </div>
           <h3 class="features-list__item-title">Meeting chats</h3>
           <div class="features-list__item-text">Vim ne tacimates neglegentur. Erat diceret omittam at est.</div>
         </li>
         <li class="features-list__item">
           <div class="features-list__item-icon">
-            <img src="../assets/icon-features-events.svg" alt="icon">
+            <img src="../assets/icon-features-events.svg" alt="icon" width="21" height="19">
           </div>
           <h3 class="features-list__item-title">Save events</h3>
           <div class="features-list__item-text">Nisl idque mel ea, nominati voluptatum.</div>

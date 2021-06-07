@@ -14,7 +14,7 @@
               Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
             </div>
             <div class="slider-quotes__item-pic">
-              <img src="../assets/pic-1.jpg" alt="avatar">
+              <img src="../assets/pic-1.jpg" alt="avatar" width="62" height="63">
             </div>
           </li>
         </ul>

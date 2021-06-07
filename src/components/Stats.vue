@@ -4,7 +4,7 @@
 
     <div class="section-stats__left">
       <div class="section-stats__icon">
-        <img src="../assets/icon-blog-1.svg" alt="icon">
+        <img src="../assets/icon-blog-1.svg" alt="icon" width="67" height="68">
       </div>
       <div class="section-stats__number">89%</div>
       <div class="section-stats__text">Customers who have increased their productivity</div>
@@ -12,7 +12,7 @@
 
     <div class="section-stats__right">
       <div class="section-stats__icon">
-        <img src="../assets/icon-blog-2.svg" alt="icon">
+        <img src="../assets/icon-blog-2.svg" alt="icon" width="75" height="66">
       </div>
       <div class="section-stats__number">3123</div>
       <div class="section-stats__text">Users who have used our application</div></div>

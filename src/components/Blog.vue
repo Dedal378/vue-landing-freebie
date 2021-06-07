@@ -10,13 +10,13 @@
 
             <div class="slider-blog__item-gallery">
               <a href="#" class="image-link image-link--b" aria-label="image 1">
-                <img src="../assets/img-001.jpg" alt="image">
+                <img src="../assets/img-001.jpg" alt="image" width="600" height="400">
               </a>
               <a href="#" class="image-link image-link--s-1" aria-label="image 2">
-                <img src="../assets/img-002.jpg" alt="image">
+                <img src="../assets/img-002.jpg" alt="image" width="500" height="346">
               </a>
               <a href="#" class="image-link image-link--s-2" aria-label="image 3">
-                <img src="../assets/img-003.jpg" alt="image">
+                <img src="../assets/img-003.jpg" alt="image" width="626" height="417">
               </a>
             </div>
 

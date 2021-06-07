@@ -3,11 +3,11 @@
     <h2 class="visually-hidden">CUSTOMERS</h2>
 
     <div class="section-inner vertical-indent vertical-indent--s">
-      <a href="#" aria-label="BitBucket"><img src="../assets/logo-bitbucket.svg" alt="icon"></a>
-      <a href="#" aria-label="Apple"><img src="../assets/logo-apple.svg" alt="icon"></a>
-      <a href="#" aria-label="Facebook"><img src="../assets/logo-facebook.svg" alt="icon"></a>
-      <a href="#" aria-label="Atlassian"><img src="../assets/logo-atlassian.svg" alt="icon"></a>
-      <a href="#" aria-label="Audi"><img src="../assets/logo-audi.svg" alt="icon"></a>
+      <a href="#" aria-label="BitBucket"><img src="../assets/logo-bitbucket.svg" alt="icon" width="117" height="29"></a>
+      <a href="#" aria-label="Apple"><img src="../assets/logo-apple.svg" alt="icon" width="117" height="25"></a>
+      <a href="#" aria-label="Facebook"><img src="../assets/logo-facebook.svg" alt="icon" width="117" height="23"></a>
+      <a href="#" aria-label="Atlassian"><img src="../assets/logo-atlassian.svg" alt="icon" width="117" height="25"></a>
+      <a href="#" aria-label="Audi"><img src="../assets/logo-audi.svg" alt="icon" width="117" height="29"></a>
     </div>
   </section>
 </template>
