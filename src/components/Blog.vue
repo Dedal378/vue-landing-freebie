@@ -92,12 +92,6 @@ export default {
       align-items: center;
       padding: $base*16 $base*8;
 
-      @media (max-width: $breakpoint-sm-max) {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: $base*6 $base*3;
-      }
-
       &-gallery {
         display: grid;
         grid-template-rows: repeat(2, $base*30);
@@ -124,6 +118,11 @@ export default {
             opacity: 0;
             transform: translate(-50%, -50%);
             transition: $transition;
+
+            @media (max-width: $breakpoint-xs-max) {
+              width: $base * 12;
+              height: $base * 12;
+            }
           }
 
           &:hover::after {
@@ -175,14 +174,37 @@ export default {
         }
 
         @media (max-width: $breakpoint-md-max) {
-          grid-template-rows: repeat(2, 1fr);
+          grid-template-rows: repeat(1, 1fr);
           grid-template-columns: repeat(3, 1fr);
           grid-gap: $base * 2;
+
+          .image-link {
+            grid-row: 1 / 2;
+
+            &--b { grid-column: 1 / 2; }
+            &--s-1 { grid-column: 2 / 3; }
+            &--s-2 { grid-column: 3 / 4; }
+          }
         }
 
         @media (max-width: $breakpoint-sm-max) {
+          width: 50%;
           margin-bottom: $base * 8;
         }
+
+        @media (max-width: $breakpoint-xs-max) {
+          width: 100%;
+          margin-bottom: $base * 8;
+        }
+      }
+
+      @media (max-width: $breakpoint-md-max) {
+        align-items: flex-start;
+      }
+
+      @media (max-width: $breakpoint-sm-max) {
+        flex-wrap: wrap;
+        padding: $base*6 $base*3;
       }
 
       &-content {

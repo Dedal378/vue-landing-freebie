@@ -9,7 +9,7 @@
           </a>
         </h1>
 
-        <button class="btn btn--transparent btn-burger">
+        <button class="btn btn--transparent btn-burger" aria-label="Toggle navigation">
           <span class="btn-burger__line"></span>
           <span class="btn-burger__line"></span>
           <span class="btn-burger__line"></span>

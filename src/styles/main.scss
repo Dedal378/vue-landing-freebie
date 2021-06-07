@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-//<editor-fold desc="Common">
+//<editor-fold desc="COMMON">
 /*html {
   @media (max-width: $breakpoint-md-max) {
     font-size: 14px;
@@ -270,10 +270,9 @@ h5 {
   clip: rect(0 0 0 0);
   border: 0;
 }
-
 //</editor-fold>
 
-//<editor-fold desc="Header&Footer">
+//<editor-fold desc="NAVIGATIONS">
 .main-navigation {
   display: flex;
   align-items: center;
@@ -323,27 +322,6 @@ h5 {
     }
   }
 }
-
-.btn-burger {
-  display: none;
-  margin-left: auto;
-
-  &__line {
-    display: block;
-    width: $base * 4;
-    height: $base / 2;
-    background-color: $color-gray-200;
-
-    & + & {
-      margin-top: $base;
-    }
-  }
-
-  @media (max-width: $breakpoint-md-max) {
-    display: block;
-  }
-}
-
 .logo {
   &__link {
     display: block;
@@ -427,5 +405,27 @@ h5 {
 
 .btn-wrapper {
   margin-left: $base * 11;
+}
+//</editor-fold>
+
+//<editor-fold desc="HEADER">
+.btn-burger {
+  display: none;
+  margin-left: auto;
+
+  &__line {
+    display: block;
+    width: $base * 4;
+    height: $base / 2;
+    background-color: $color-gray-200;
+
+    & + & {
+      margin-top: $base;
+    }
+  }
+
+  @media (max-width: $breakpoint-md-max) {
+    display: block;
+  }
 }
 //</editor-fold>
