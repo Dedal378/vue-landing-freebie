@@ -5,100 +5,38 @@
       <div class="ta-с section-subtitle">Frequently asked questions</div>
 
       <ul class="faq-accordion">
-        <li class="faq-accordion__item">
+        <li
+            class="faq-accordion__item"
+            :class="{ 'faq-accordion__item--active': idx === activeIndex }"
+            :key="idx"
+            v-for="(accordionItem, idx) in accordionItems"
+            @click="onChangeItem(idx)"
+        >
           <div class="faq-accordion__item-trigger">
             <div class="faq-accordion__item-trigger-icon">
               <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="arrow" d="M16 9L9 2L2 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <h3 class="faq-accordion__item-trigger-title">Reque insolens in vel?</h3>
+            <h3 class="faq-accordion__item-trigger-title">{{ accordionItem.title }}</h3>
           </div>
-          <div class="faq-accordion__item-content">
-            <div class="faq-accordion__item-content-text">
-              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-            </div>
-            <div class="faq-accordion__item-content-btn">
-              <a href="#" class="btn btn--grayscale">Go to documentation</a>
-            </div>
-          </div>
-        </li>
 
-        <li class="faq-accordion__item">
-          <div class="faq-accordion__item-trigger">
-            <div class="faq-accordion__item-trigger-icon">
-              <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="arrow" d="M16 9L9 2L2 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+          <transition
+              name="animatecss"
+              enter-active-class="animate__animated animate__fadeIn"
+          >
+            <div
+                class="faq-accordion__item-content"
+                v-show="accordionItem.active"
+            >
+              <div class="faq-accordion__item-content-text">
+                {{ accordionItem.text }}
+              </div>
+              <div class="faq-accordion__item-content-btn">
+                <a href="#" class="btn btn--grayscale">{{ btnText }}</a>
+              </div>
             </div>
-            <h3 class="faq-accordion__item-trigger-title">Vis rebum error graecis ea, id sit postea accusamus?</h3>
-          </div>
-          <div class="faq-accordion__item-content">
-            <div class="faq-accordion__item-content-text">
-              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-            </div>
-            <div class="faq-accordion__item-content-btn">
-              <a href="#" class="btn btn--grayscale">Go to documentation</a>
-            </div>
-          </div>
-        </li>
-
-        <li class="faq-accordion__item faq-accordion__item--active">
-          <div class="faq-accordion__item-trigger">
-            <div class="faq-accordion__item-trigger-icon">
-              <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="arrow" d="M16 9L9 2L2 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <h3 class="faq-accordion__item-trigger-title">Lorem repudiandae ne nec?</h3>
-          </div>
-          <div class="faq-accordion__item-content">
-            <div class="faq-accordion__item-content-text">
-              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-            </div>
-            <div class="faq-accordion__item-content-btn">
-              <a href="#" class="btn btn--grayscale">Go to documentation</a>
-            </div>
-          </div>
-        </li>
-
-
-        <li class="faq-accordion__item">
-          <div class="faq-accordion__item-trigger">
-            <div class="faq-accordion__item-trigger-icon">
-              <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="arrow" d="M16 9L9 2L2 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <h3 class="faq-accordion__item-trigger-title">Ad dicit numquam vel. Et eos iudico feugait percipitur?</h3>
-          </div>
-          <div class="faq-accordion__item-content">
-            <div class="faq-accordion__item-content-text">
-              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-            </div>
-            <div class="faq-accordion__item-content-btn">
-              <a href="#" class="btn btn--grayscale">Go to documentation</a>
-            </div>
-          </div>
-        </li>
-
-        <li class="faq-accordion__item">
-          <div class="faq-accordion__item-trigger">
-            <div class="faq-accordion__item-trigger-icon">
-              <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="arrow" d="M16 9L9 2L2 9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <h3 class="faq-accordion__item-trigger-title">Sea no dico percipitur. Fierent constituam definitiones id eum?</h3>
-          </div>
-          <div class="faq-accordion__item-content">
-            <div class="faq-accordion__item-content-text">
-              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-            </div>
-            <div class="faq-accordion__item-content-btn">
-              <a href="#" class="btn btn--grayscale">Go to documentation</a>
-            </div>
-          </div>
+          </transition>
         </li>
       </ul>
     </div>
@@ -107,7 +45,47 @@
 
 <script>
 export default {
-  name: "Faq"
+  name: "Faq",
+  data() {
+    return {
+      accordionItems: [
+        {
+          title: 'Reque insolens in vel?',
+          text: 'Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.',
+          active: false
+        },
+        {
+          title: 'Vis rebum error graecis ea, id sit postea accusamus?',
+          text: 'Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.',
+          active: false
+        },
+        {
+          title: 'Lorem repudiandae ne nec?',
+          text: 'Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.',
+          active: false
+        },
+        {
+          title: 'Ad dicit numquam vel. Et eos iudico feugait percipitur?',
+          text: 'Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.',
+          active: false
+        },
+        {
+          title: 'Sea no dico percipitur. Fierent constituam definitiones id eum?',
+          text: 'Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.',
+          active: false
+        },
+      ],
+      btnText: 'Go to documentation',
+      isActiveItem: false,
+      activeIndex: null,
+    }
+  },
+  methods: {
+    onChangeItem(idx) {
+      this.accordionItems[idx].active = !this.accordionItems[idx].active
+      this.activeIndex = idx
+    }
+  }
 }
 </script>
 

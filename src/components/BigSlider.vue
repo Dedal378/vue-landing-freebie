@@ -6,7 +6,9 @@
 
         <div class="section-inner slider-big__item-content vertical-indent vertical-indent--m">
           <h2>PLAN YOUR LIFE</h2>
-          <div class="section-subtitle">Increase your <span>productivity</span></div>
+          <transition name="fade-my" appear>
+            <div class="section-subtitle">Increase your <span>productivity</span></div>
+          </transition>
 
           <div class="slider-big__item-content text">
             Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.

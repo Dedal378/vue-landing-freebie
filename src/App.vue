@@ -13,7 +13,6 @@
       <GetStarted />
       <Newsletter />
     </main>
-
     <Footer />
   </div>
 </template>

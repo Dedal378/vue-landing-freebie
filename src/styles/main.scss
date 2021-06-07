@@ -272,6 +272,28 @@ h5 {
 }
 //</editor-fold>
 
+//<editor-fold desc="HEADER">
+.btn-burger {
+  display: none;
+  margin-left: auto;
+
+  &__line {
+    display: block;
+    width: $base * 4;
+    height: $base / 2;
+    background-color: $color-gray-200;
+
+    & + & {
+      margin-top: $base;
+    }
+  }
+
+  @media (max-width: $breakpoint-md-max) {
+    display: block;
+  }
+}
+//</editor-fold>
+
 //<editor-fold desc="NAVIGATIONS">
 .main-navigation {
   display: flex;
@@ -322,6 +344,7 @@ h5 {
     }
   }
 }
+
 .logo {
   &__link {
     display: block;
@@ -408,24 +431,40 @@ h5 {
 }
 //</editor-fold>
 
-//<editor-fold desc="HEADER">
-.btn-burger {
-  display: none;
-  margin-left: auto;
+//<editor-fold desc="ANIMATION">
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
 
-  &__line {
-    display: block;
-    width: $base * 4;
-    height: $base / 2;
-    background-color: $color-gray-200;
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
 
-    & + & {
-      margin-top: $base;
-    }
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
   }
-
-  @media (max-width: $breakpoint-md-max) {
-    display: block;
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 //</editor-fold>
