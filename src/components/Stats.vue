@@ -37,6 +37,16 @@ export default {
     flex-direction: column;
     flex-basis: 50%;
     padding: $base*16 $base*22;
+
+    @media (max-width: $breakpoint-sm-max) {
+      flex-basis: 70%;
+      padding: $base*8 $base*11;
+    }
+
+    @media (max-width: $breakpoint-xs-max) {
+      flex-basis: 100%;
+      padding: $base*4 $base*5;
+    }
   }
 
   &__left {
@@ -45,17 +55,14 @@ export default {
     color: $color-white;
     background-color: $color-blue-300;
 
-    h2 {
-      color: $color-white;
+    @media (max-width: $breakpoint-xs-max) {
+      align-items: center;
+      text-align: center;
     }
   }
 
   &__right {
     color: $color-blue-300;
-
-    h2 {
-      color: $color-blue-300;
-    }
   }
 
   &__icon {
@@ -75,6 +82,11 @@ export default {
     @media (min-width: $breakpoint-lg-min) {
       width: 42%;
     }
+  }
+
+  @media (max-width: $breakpoint-xs-max) {
+    flex-direction: column;
+    text-align: center;
   }
 }
 

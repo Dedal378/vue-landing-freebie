@@ -126,7 +126,7 @@ export default {
 
 .faq-accordion {
   @include list-null();
-  width: $base * 185;
+  max-width: $base * 185;
   margin: 0 auto;
 
   &__item {
@@ -192,6 +192,18 @@ export default {
 
         .btn--grayscale {
           font-weight: $fw-medium;
+        }
+      }
+
+      @media (max-width: $breakpoint-xs-max) {
+        flex-direction: column;
+
+        &-text {
+          margin-bottom: $base * 6;
+        }
+
+        &-btn {
+          margin-left: 0;
         }
       }
     }

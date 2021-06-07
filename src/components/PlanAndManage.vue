@@ -75,8 +75,12 @@ export default {
       left: 41%;
     }
 
-    @media (min-width: $breakpoint-lg-min) {
-      width: 43%;
+    @media (max-width: $breakpoint-sm-max) {
+      width: 60%;
+    }
+
+    @media (max-width: $breakpoint-xs-max) {
+      width: 70%;
     }
   }
 }

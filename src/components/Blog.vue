@@ -55,10 +55,21 @@ export default {
 .section-blog {
   background-color: $color-gray-50;
 
+  @media (max-width: $breakpoint-xs-max) {
+    .vertical-indent--m {
+      padding-bottom: $base * 20;
+    }
+  }
+
+
   .section-subtitle {
     font-size: $fs-l;
     font-weight: $fw-medium;
     margin-bottom: $padding-vertical-sm;
+
+    @media (max-width: $breakpoint-sm-max) {
+      margin-bottom: $base * 8;
+    }
   }
 
   .slider-wrapper {
@@ -73,7 +84,7 @@ export default {
     box-shadow: 0 $base*3 $base*13 $color-gray-50;
 
     @media (max-width: $breakpoint-md-max) {
-      margin: 0 0 $base*15;
+      margin: 0 0 $base*10;
     }
 
     &__item {
@@ -84,6 +95,8 @@ export default {
 
       @media (max-width: $breakpoint-sm-max) {
         flex-wrap: wrap;
+        justify-content: center;
+        padding: $base*6 $base*3;
       }
 
       &-gallery {
@@ -163,11 +176,19 @@ export default {
         }
 
         @media (max-width: $breakpoint-md-max) {
-          grid-template-rows: repeat(2, $base*25);
-          grid-template-columns: repeat(3, $base*25);
-          grid-gap: $base * 4;
+          grid-template-rows: repeat(2, $base*27);
+          grid-template-columns: repeat(3, $base*27);
+          grid-gap: $base * 2;
         }
 
+        @media (max-width: $breakpoint-sm-max) {
+          grid-template-rows: repeat(2, $base*23);
+          grid-template-columns: repeat(3, $base*23);
+        }
+
+        @media (max-width: $breakpoint-sm-max) {
+          margin-bottom: $base * 8;
+        }
       }
 
       &-content {
@@ -197,7 +218,16 @@ export default {
           font-size: $fs-s;
           margin-bottom: $base * 8;
           line-height: 1.9;
+        }
 
+        @media (max-width: $breakpoint-sm-max) {
+          margin-left: inherit;
+
+          .title {
+            position: relative;
+            margin-bottom: $base * 4;
+            z-index: 50;
+          }
         }
       }
     }

@@ -54,6 +54,13 @@ export default {
 .section-features {
   background: 50% 40% no-repeat url("../../src/assets/clouds-features.svg");
 
+  @media (max-width: $breakpoint-sm-max) {
+    .vertical-indent--l {
+      padding-top: $base * 10;
+      padding-bottom: $base * 10;
+    }
+  }
+
   h2 {
     margin-bottom: $base * 5;
   }
@@ -62,6 +69,10 @@ export default {
     margin-bottom: $base * 23;
     font-size: $fs-l;
     font-weight: $fw-medium;
+
+    @media (max-width: $breakpoint-sm-max) {
+      margin-bottom: $base * 15;
+    }
   }
 
   .btns {
@@ -89,18 +100,23 @@ export default {
       &::before { margin-right: $base * 4; }
       &::after { margin-left: $base * 4; }
     }
+
+    @media (max-width: $breakpoint-xs-max) {
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center;
+    }
   }
 }
 
 .features-list {
+  @include list-null();
   display: flex;
   justify-content: space-around;
-  @include list-null();
+  flex-wrap: wrap;
   margin: 0 0 $base*25;
-
-  @media (max-width: $breakpoint-md-max) {
-    margin: 0 0 $base*15;
-  }
 
   &__item {
     position: relative;
@@ -143,6 +159,37 @@ export default {
       font-weight: $fw-medium;
       color: $color-gray-300;
       line-height: 2;
+    }
+  }
+
+  @media (max-width: $breakpoint-md-max) {
+    margin: 0 0 $base*15;
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    justify-content: center;
+    gap: $base * 5;
+
+    &__item {
+      flex-basis: 45%;
+
+      &::before {
+        display: none;
+      }
+
+      &-icon {
+        margin-bottom: $base * 4;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-xs-max) {
+    gap: $base * 8;
+
+    &__item {
+      flex-basis: 75%;
+      padding-bottom: $base * 8;
+      border-bottom: 1px solid $color-gray-100;
     }
   }
 }

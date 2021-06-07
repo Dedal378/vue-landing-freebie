@@ -66,6 +66,10 @@ export default {
         35% 50% no-repeat url("../../src/assets/clouds.svg");
     text-align: center;
 
+    @media (max-width: $breakpoint-xs-max) {
+      height: $base * 132;
+    }
+
     &.icon-stats {
       position: absolute;
       width: 100%;
@@ -102,6 +106,10 @@ export default {
         margin: 0 auto $base*5;
         font-size: $fs-s;
         line-height: 2;
+
+        @media (max-width: $breakpoint-xs-max) {
+          max-width: 80%;
+        }
       }
     }
   }

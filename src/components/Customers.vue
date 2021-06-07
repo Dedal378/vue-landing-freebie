@@ -35,6 +35,11 @@ export default {
       }
     }
 
+    @media (max-width: $breakpoint-sm-max) {
+      justify-content: center;
+      gap: $base * 5;
+    }
+
     /*&__items {
       display: flex;
       justify-content: space-between;

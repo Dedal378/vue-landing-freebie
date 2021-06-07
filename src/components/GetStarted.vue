@@ -63,6 +63,10 @@ export default {
     margin: 0 auto $base*12;
     font-size: $fs-s;
     line-height: 2;
+
+    @media (max-width: $breakpoint-xs-max) {
+      max-width: 100%;
+    }
   }
 
   .btn-group {

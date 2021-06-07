@@ -78,6 +78,18 @@ export default {
     &__btn {
       margin-left: $base * 3;
     }
+
+    @media (max-width: $breakpoint-xs-max) {
+      flex-direction: column;
+
+      &__input {
+        margin-bottom: $base * 5;
+      }
+
+      &__btn {
+        margin-left: inherit;
+      }
+    }
   }
 }
 </style>

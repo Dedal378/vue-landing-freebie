@@ -98,55 +98,46 @@ h5 {
 }
 
 .vertical-indent {
+  @mixin vertical-indent($size) {
+    padding-top: $size;
+    padding-bottom: $size;
+  }
+
   &--xs {
-    padding-top: $base * 5;
-    padding-bottom: $base * 5;
+    @include vertical-indent($base * 5);
   }
 
   &--s {
-    padding-top: $base * 15;
-    padding-bottom: $base * 15;
+    @include vertical-indent($base * 15);
   }
 
   &--m {
-    padding-top: $base * 23;
-    padding-bottom: $base * 23;
+    @include vertical-indent($base * 23);
   }
 
   &--l {
-    padding-top: $base * 42;
-    padding-bottom: $base * 42;
+    @include vertical-indent($base * 42);
   }
 
   &--xl {
-    padding-top: $base * 54;
-    padding-bottom: $base * 54;
+    @include vertical-indent($base * 54);
   }
 
   @media (max-width: $breakpoint-md-max) {
     &--xs {
-      padding-top: $base * 2;
-      padding-bottom: $base * 2;
+      @include vertical-indent($base * 2);
     }
-
     &--s {
-      padding-top: $base * 7;
-      padding-bottom: $base * 7;
+      @include vertical-indent($base * 7);
     }
-
     &--m {
-      padding-top: $base * 11;
-      padding-bottom: $base * 11;
+      @include vertical-indent($base * 11);
     }
-
     &--l {
-      padding-top: $base * 21;
-      padding-bottom: $base * 21;
+      @include vertical-indent($base * 21);
     }
-
     &--xl {
-      padding-top: $base * 27;
-      padding-bottom: $base * 27;
+      @include vertical-indent($base * 27);
     }
   }
 }
@@ -279,6 +270,7 @@ h5 {
   clip: rect(0 0 0 0);
   border: 0;
 }
+
 //</editor-fold>
 
 //<editor-fold desc="Header&Footer">
@@ -302,7 +294,7 @@ h5 {
         right: 0;
         left: 0;
         margin-left: 0;
-        padding: 0 $base * 5;
+        padding: 0 $base*5 $base*5;
         background-color: $color-white;
         z-index: 7;
       }
@@ -369,6 +361,10 @@ h5 {
   &__item {
     & + & {
       margin-left: $base * 10;
+
+      @media (max-width: $breakpoint-xs-max) {
+        margin-left: $base * 4;
+      }
     }
 
     &-link {

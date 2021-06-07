@@ -42,6 +42,11 @@ export default {
   .section-inner {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $breakpoint-xs-max) {
+      flex-direction: column;
+      padding-bottom: $base * 20;
+    }
   }
 
   &__left {
@@ -65,6 +70,19 @@ export default {
       color: $color-gray-200;
       font-size: $fs-xs;
       line-height: 1.9;
+    }
+
+    @media (max-width: $breakpoint-xs-max) {
+      margin-bottom: $base * 7;
+      align-items: center;
+
+      h2 {
+        margin-bottom: $base * 4;
+      }
+
+      .section-subtitle {
+        margin-bottom: $base * 4;
+      }
     }
   }
 
@@ -100,6 +118,12 @@ export default {
         background-color: $color-white;
         overflow: hidden;
         transform: translateX(-50%);
+      }
+    }
+
+    @media (max-width: $breakpoint-xs-max) {
+      &__item {
+        padding: $base*7 $base*5 $base*15;
       }
     }
   }
