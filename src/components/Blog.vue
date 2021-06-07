@@ -61,7 +61,6 @@ export default {
     }
   }
 
-
   .section-subtitle {
     font-size: $fs-l;
     font-weight: $fw-medium;
@@ -176,14 +175,9 @@ export default {
         }
 
         @media (max-width: $breakpoint-md-max) {
-          grid-template-rows: repeat(2, $base*27);
-          grid-template-columns: repeat(3, $base*27);
+          grid-template-rows: repeat(2, 1fr);
+          grid-template-columns: repeat(3, 1fr);
           grid-gap: $base * 2;
-        }
-
-        @media (max-width: $breakpoint-sm-max) {
-          grid-template-rows: repeat(2, $base*23);
-          grid-template-columns: repeat(3, $base*23);
         }
 
         @media (max-width: $breakpoint-sm-max) {
