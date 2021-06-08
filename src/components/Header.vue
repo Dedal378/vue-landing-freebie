@@ -25,8 +25,8 @@
 
         <div
             class="main-navigation__inner-wrapper"
-            v-show="showMobMenu"
         >
+            <!--v-show="showMobMenu"-->
           <div class="nav">
             <ul class="nav-wrapper">
               <li class="nav-wrapper__item">
