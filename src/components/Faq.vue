@@ -76,7 +76,6 @@ export default {
         },
       ],
       btnText: 'Go to documentation',
-      isActiveItem: false,
       activeIndex: null,
     }
   },
