@@ -5,8 +5,10 @@
         <div class="slider-big__item icon-stats"></div>
 
         <div class="section-inner slider-big__item-content vertical-indent vertical-indent--m">
-          <h2>PLAN YOUR LIFE</h2>
-          <transition name="fade-my" appear>
+          <transition name="fade" appear>
+            <h2>PLAN YOUR LIFE</h2>
+          </transition>
+          <transition name="fade" appear>
             <div class="section-subtitle">Increase your <span>productivity</span></div>
           </transition>
 
