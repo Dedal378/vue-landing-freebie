@@ -3,6 +3,7 @@
       class="section-outer section-header"
       :class="{ 'section-header--active-nav': showMobMenu }"
   >
+    <!--TODO: исключить использование классов, сделать только на js-->
     <div class="section-inner section-inner--wide vertical-indent vertical-indent--xs">
 
       <div class="main-navigation">
@@ -24,7 +25,7 @@
 
         <div
             class="main-navigation__inner-wrapper"
-
+            v-show="showMobMenu"
         >
           <div class="nav">
             <ul class="nav-wrapper">
