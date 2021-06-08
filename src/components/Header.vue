@@ -1,5 +1,8 @@
 <template>
-  <header class="section-outer section-header">
+  <header
+      class="section-outer section-header"
+      :class="{ 'section-header--active-nav': showMobMenu }"
+  >
     <div class="section-inner section-inner--wide vertical-indent vertical-indent--xs">
 
       <div class="main-navigation">
@@ -9,13 +12,20 @@
           </a>
         </h1>
 
-        <button class="btn btn--transparent btn-burger" aria-label="Toggle navigation">
+        <button
+            class="btn btn--transparent btn-burger"
+            aria-label="Toggle navigation"
+            @click="showMobMenu = !showMobMenu"
+        >
           <span class="btn-burger__line"></span>
           <span class="btn-burger__line"></span>
           <span class="btn-burger__line"></span>
         </button>
 
-        <div class="main-navigation__inner-wrapper">
+        <div
+            class="main-navigation__inner-wrapper"
+
+        >
           <div class="nav">
             <ul class="nav-wrapper">
               <li class="nav-wrapper__item">
@@ -90,11 +100,44 @@
 </template>
 
 <script>
-export default { name: 'Header' }
+export default {
+  name: 'Header',
+  data() {
+    return {
+      showMobMenu: false
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">
 .section-header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $color-white;
+  z-index: 60;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+  }
+
+  &--active-nav {
+    &::before {
+      display: block;
+    }
+
+    .main-navigation__inner-wrapper {
+      display: flex;
+    }
+  }
 }
 </style>
