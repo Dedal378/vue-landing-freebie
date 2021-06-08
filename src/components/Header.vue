@@ -5,7 +5,6 @@
   >
     <!--TODO: исключить использование классов, сделать только на js-->
     <div class="section-inner section-inner--wide vertical-indent vertical-indent--xs">
-
       <div class="main-navigation">
         <h1 class="logo">
           <a class="logo__link" href="#" aria-label="Logo in header">
@@ -16,7 +15,7 @@
         <button
             class="btn btn--transparent btn-burger"
             aria-label="Toggle navigation"
-            @click="showMobMenu = !showMobMenu"
+            @click="btnMenuOpenToggle()"
         >
           <span class="btn-burger__line"></span>
           <span class="btn-burger__line"></span>
@@ -26,7 +25,7 @@
         <div
             class="main-navigation__inner-wrapper"
         >
-            <!--v-show="showMobMenu"-->
+          <!--v-show="showMobMenu"-->
           <div class="nav">
             <ul class="nav-wrapper">
               <li class="nav-wrapper__item">
@@ -107,6 +106,60 @@ export default {
     return {
       showMobMenu: false
     }
+  },
+  methods: {
+    hideScroll() {
+      const scrollWidth = `${ this.getScrollbarWidth}px`
+
+      document.body.style.paddingRight = scrollWidth
+      document.body.style.overflow = 'hidden'
+
+      document.querySelector('.main-navigation').style.paddingRight = scrollWidth
+    },
+    showScroll() {
+      document.body.style.paddingRight = ''
+      document.body.style.overflow = 'visible'
+
+      document.querySelector('.main-navigation').style.paddingRight = ''
+    },
+    btnMenuOpenToggle() {
+      this.showMobMenu = !this.showMobMenu
+      this.showMobMenu ? this.hideScroll() : this.showScroll()
+    },
+    resetNav() {
+      this.showMobMenu = false
+      this.showScroll()
+    },
+  },
+  computed: {
+    getScrollbarWidth() {
+      const outer = document.createElement('div')
+
+      outer.style.position = 'absolute'
+      outer.style.top = '-9999px'
+      outer.style.width = '50px'
+      outer.style.height = '50px'
+      outer.style.overflow = 'scroll'
+      outer.style.visibility = 'hidden'
+
+      document.body.appendChild(outer)
+
+      const scrollBarWidth = outer.offsetWidth - outer.clientWidth
+
+      document.body.removeChild(outer)
+
+      return scrollBarWidth
+    }
+  },
+  mounted() {
+    this.$nextTick(function () {
+      window.addEventListener('resize', this.resetNav)
+      this.resetNav() // надо ли оставлять?
+    })
+  },
+  destroyed() {
+    console.log('destroyed')
+    window.removeEventListener('resize', this.resetNav)
   }
 }
 </script>
