@@ -1,7 +1,63 @@
 <template>
-  <section class="section-outer section-slider-big">
-    <ul class="slider-big">
-      <li class="slider-big__item">
+  <section class="section-outer section-slider-big swiper-container">
+    <ul class="slider-big swiper-wrapper">
+      <li class="slider-big__item swiper-slide">
+        <div class="slider-big__item icon-stats"></div>
+
+        <div class="section-inner slider-big__item-content vertical-indent vertical-indent--m">
+          <transition name="fade" appear>
+            <h2>PLAN YOUR LIFE</h2>
+          </transition>
+          <transition name="fade" appear>
+            <div class="section-subtitle">Increase your <span>productivity</span></div>
+          </transition>
+
+          <div class="slider-big__item-content text">
+            Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.
+          </div>
+
+          <div class="btn-icon-play-wrapper">
+            <!--<img src="../../src/assets/btn-play.svg" alt="play slideshow" />-->
+            <a href="#" aria-label="Play button in slider">
+              <i class="icon-play">
+                <svg width="12" height="12" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 2.73354C6.66667 3.11844 6.66667 4.08069 6 4.46559L1.5 7.06367C0.833333 7.44857 0 6.96744 0 6.19764V1.00149C0 0.231691 0.833333 -0.249434 1.5 0.135467L6 2.73354Z" fill="#5e81ff"/>
+                </svg>
+              </i>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="slider-big__item swiper-slide">
+        <div class="slider-big__item icon-stats"></div>
+
+        <div class="section-inner slider-big__item-content vertical-indent vertical-indent--m">
+          <transition name="fade" appear>
+            <h2>PLAN YOUR LIFE</h2>
+          </transition>
+          <transition name="fade" appear>
+            <div class="section-subtitle">Increase your <span>productivity</span></div>
+          </transition>
+
+          <div class="slider-big__item-content text">
+            Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.
+          </div>
+
+          <div class="btn-icon-play-wrapper">
+            <!--<img src="../../src/assets/btn-play.svg" alt="play slideshow" />-->
+            <a href="#" aria-label="Play button in slider">
+              <i class="icon-play">
+                <svg width="12" height="12" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 2.73354C6.66667 3.11844 6.66667 4.08069 6 4.46559L1.5 7.06367C0.833333 7.44857 0 6.96744 0 6.19764V1.00149C0 0.231691 0.833333 -0.249434 1.5 0.135467L6 2.73354Z" fill="#5e81ff"/>
+                </svg>
+              </i>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="slider-big__item swiper-slide">
         <div class="slider-big__item icon-stats"></div>
 
         <div class="section-inner slider-big__item-content vertical-indent vertical-indent--m">
@@ -30,17 +86,37 @@
       </li>
     </ul>
 
-    <ul class="dots">
-      <li class="dots__item dots__item--active"></li>
-      <li class="dots__item"></li>
-      <li class="dots__item"></li>
-    </ul>
+    <div class="dots swiper-pagination"></div>
   </section>
 </template>
 
 <script>
+import Swiper from 'swiper/bundle';
+
 export default {
-  name: "BigSlider"
+  name: "BigSlider",
+
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+
+  },
+  mounted() {
+    new Swiper('.swiper-container', {
+      direction: 'horizontal',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  }
 }
 </script>
 
